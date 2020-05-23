@@ -3,13 +3,14 @@ import {StyleSheet, Text, SafeAreaView, View, Image} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {SearchBar} from 'react-native-elements';
 import Product from '../components/product';
+import { useState } from 'react';
 
 const HomeStack = createStackNavigator();
 
 function LogoTitle() {
   return (
       <Image
-          style={{ width: 50, height: 50 }}
+          style={{ width: 48, height: 48 }}
           source={require('../img/logo.png')}
       />
   );
@@ -22,14 +23,13 @@ function HomeScreen() {
 }
 
 function HomeView() {
+  const [text, setText] = useState("");
+
   return (
     <SafeAreaView style={styles.MainContainer}>
       <LogoTitle style = {styles.logoContainer}/>
       <View style={styles.container}>
         <SearchBar
-            inputStyle={{
-              textSize: 12
-            }}
           inputContainerStyle={{
             backgroundColor: 'white',
           }}
@@ -43,7 +43,9 @@ function HomeView() {
           }}
           placeholder="Aramak istediğiniz ürünü giriniz"
           placeholderTextColor="#afafaf"
-          ref={search => (this.search = search)}
+            onChangeText={(text) => setText(text)}
+            value={text}
+          ref={search => (search = search)}
         />
         <View style={styles.productFlow}>
           <Product />
