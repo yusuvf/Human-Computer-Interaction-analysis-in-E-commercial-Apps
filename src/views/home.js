@@ -5,7 +5,9 @@ import {SearchBar} from 'react-native-elements';
 import Product from '../components/product';
 import { useState } from 'react';
 
-const HomeStack = createStackNavigator();
+import DismissKeyboardView from '../components/DismissKeyboard';
+
+//const HomeStack = createStackNavigator();
 
 function LogoTitle() {
   return (
@@ -29,24 +31,35 @@ function HomeView() {
     <SafeAreaView style={styles.MainContainer}>
       <LogoTitle style = {styles.logoContainer}/>
       <View style={styles.container}>
-        <SearchBar
+        <DismissKeyboardView>
+         <SearchBar
           inputContainerStyle={{
             backgroundColor: 'white',
+            borderRadius: 20,
+            width:320,
+          }}
+          inputStyle={{
+            fontSize: 16
           }}
           containerStyle={{
+            marginTop:20,
             alignItems: 'center',
             flex: 1,
-            width: 300,
             backgroundColor: 'transparent',
             borderBottomWidth: 0,
             borderTopWidth: 0,
           }}
-          placeholder="Aramak istediğiniz ürünü giriniz"
+          returnKeyType="search"
+          searchIcon={{
+            size: 20
+          }}
+          placeholder="Aradığınız ürün burada"
           placeholderTextColor="#afafaf"
             onChangeText={(text) => setText(text)}
             value={text}
           ref={search => (search = search)}
-        />
+         />
+        </DismissKeyboardView>
         <View style={styles.productFlow}>
           <Product />
         </View>
@@ -60,7 +73,7 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   MainContainer: {
     flex: 1,
-    backgroundColor: 'orange',
+    backgroundColor: '#74b9ff',
     alignItems: 'center',
     justifyContent: 'center'
   },
