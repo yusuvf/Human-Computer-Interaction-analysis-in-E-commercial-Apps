@@ -1,15 +1,15 @@
 import * as React from 'react';
-import {Text,TextInput,  View} from 'react-native';
+import {Text, TextInput, View} from 'react-native';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { SearchBar } from 'react-native-elements';
 
-import HomeScreen from './views/home';
+import HomeView from './views/home';
 import CategoryStackScreen from './views/category';
 import CartView from './views/cart';
 import ProfileView from './views/profile';
+import SearchResultView from './views/searchResultView';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,13 +17,13 @@ function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Feed"
+        initialRouteName="Home"
         tabBarOptions={{
           activeTintColor: '#4b5fe9',
         }}>
         <Tab.Screen
           name="Home"
-          component={HomeScreen}
+          component={HomeView}
           options={{
             tabBarLabel: 'Ana Sayfa',
             tabBarIcon: ({color, size}) => (
