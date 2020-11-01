@@ -1,20 +1,60 @@
 {
   "products" : [
     {
-      "name" : "IPhone 11 64GB",
-      "price" : 7000,
+      "name" : "IPhone 11 64GB Mor",
+      "price" : "7999,00₺",
       "img_reference" : "iphone11-purple.png",
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone 11","İphone 11","iphone 11","IPHONE 11","İPHONE 11","IPhone 11","IPHone 11","IPHOne 11","IPHONe 11","İPhone 11","İPHone 11","İPHOne 11","İPHONe 11",
         "Iphone11","İphone11","iphone11","IPHONE11","İPHONE11","IPhone11","IPHone11","IPHOne11","IPHONe11","İPhone11","İPHone11","İPHOne11","İPHONe11"]
     },
     {
-      "name" : "IPhone XR 64GB",
-      "price" : 7000,
-      "img_reference" : "iphone11-purple.png",
+      "name" : "IPhone XR 64GB Sarı",
+      "price" : "6999,00₺",
+      "img_reference" : "iphone-xr-yellow.png",
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR"]
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
+    },
+    {
+      "name" : "IPhone XR 64GB Sarı",
+      "price" : "6999,00₺",
+      "img_reference" : "iphone-xr-yellow.png",
+      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
+    },
+    {
+      "name" : "IPhone XR 64GB Sarı",
+      "price" : "6999,00₺",
+      "img_reference" : "iphone-xr-yellow.png",
+      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
+    },
+    {
+      "name" : "IPhone XR 64GB Sarı",
+      "price" : "6999,00₺",
+      "img_reference" : "iphone-xr-yellow.png",
+      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
+    },
+    {
+      "name" : "IPhone XR 64GB Sarı",
+      "price" : "6999,00₺",
+      "img_reference" : "iphone-xr-yellow.png",
+      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
+    },
+    {
+      "name" : "IPhone XR 64GB Sarı",
+      "price" : "6999,00₺",
+      "img_reference" : "iphone-xr-yellow.png",
+      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
     }
   ]
 }
