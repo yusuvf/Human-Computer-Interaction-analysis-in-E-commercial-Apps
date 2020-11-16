@@ -3,7 +3,6 @@ import {Button, SafeAreaView, View, FlatList, StyleSheet, TouchableOpacity, Acti
 import {Image} from 'react-native-elements';
 import { Text } from '@ui-kitten/components';
 
-import HomeView from './home';
 import ProductView from './productView';
 
 import {
@@ -49,6 +48,7 @@ function findSearchedProduct(searchedText) {
                     name : Products.products[i].name,
                     price : Products.products[i].price,
                     img_reference : Products.products[i].img_reference,
+                    imgHash : Products.products[i].imgHash,
                 })
             }
         }
@@ -57,14 +57,23 @@ function findSearchedProduct(searchedText) {
 }
 
 const Item = ({ item, onPress }) => {
-    let ref = require("../img/iphone11-purple.png");
+    const images = [
+        require("../img/iphone11-purple.png"),
+        require("../img/iphone-xr-yellow.png"),
+        require("../img/iphone-xr-black.png"),
+        require("../img/iphone-xr-orange.png"),
+        require("../img/iphone-xr-red.png"),
+        require("../img/iphone-xr-blue.png"),
+        require("../img/iphone-xr-white.png"),
+    ]
     //console.log(item.img_reference);
 
+    console.log(item)
     return(
         <View style={styles.ProductContainer}>
             <TouchableOpacity onPress={onPress} style={{ alignItems:'center'}}>
                 <Image
-                    source={ref}
+                    source={images[item.imgHash]}
                     style={{ width: responsiveWidth(40), maxHeight: 200, height:responsiveHeight(25) }}
                     PlaceholderContent={<ActivityIndicator />}
                 />
@@ -106,7 +115,7 @@ const SearchResultView = ({ route, navigation }) => {
             </OverflowMenu>
         </React.Fragment>
     );
-    //onPress={navigation.navigate('ProductView', "text")}
+
     const navigateBack = () => {
         navigation.goBack();
     };
@@ -166,7 +175,7 @@ const SearchResultView = ({ route, navigation }) => {
                     renderItem={renderItem}
                     keyExtractor={(item) => item.id}
                     extraData={selectedId}
-                    contentContainerStyle={styles.list}
+                    //contentContainerStyle={styles.list}
                     horizontal={false}
                     numColumns={2}
                     onPress={() => navigation.navigate("ProductView")}
