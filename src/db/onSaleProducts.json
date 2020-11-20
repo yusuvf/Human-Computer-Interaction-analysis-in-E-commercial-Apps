@@ -1,14 +1,12 @@
 {
   "products" : [
     {
-      "name" : "IPhone 11 64GB Mor",
-      "price" : "7999,00₺",
-      "salePrice" : "7499,00₺",
+      "name" : "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
+      "price" : "2399,00₺",
+      "salePrice" : "2199,00₺",
       "itemRating" : 5,
-      "img_reference" : "braun1.jpg",
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone 11","İphone 11","iphone 11","IPHONE 11","İPHONE 11","IPhone 11","IPHone 11","IPHOne 11","IPHONe 11","İPhone 11","İPHone 11","İPHOne 11","İPHONe 11",
-        "Iphone11","İphone11","iphone11","IPHONE11","İPHONE11","IPhone11","IPHone11","IPHOne11","IPHONe11","İPhone11","İPHone11","İPHOne11","İPHONe11"],
+      "img_reference" : "philips_speedpro_1.png",
+      "keywords" : ["süpürge","dikeysüpürge", "dikey süpürge",],
       "imgHash" : 0
     },
     {

@@ -27,6 +27,7 @@ function App() {
                       initialRouteName="Home"
                       tabBarOptions={{
                           activeTintColor: '#4b5fe9',
+                          style: {backgroundColor:'#F5F5F4'}
                       }}>
                       <Tab.Screen
                           name="Home"
