@@ -53,18 +53,17 @@ function MainPage({navigation}) {
   const [text, setText] = useState('');
   const [selectedId, setSelectedId] = React.useState(null);
   const [touchControl, setTouchControl] = React.useState({
-      alignItems: 'center',
-      backgroundColor: 'transparent',
-      borderBottomWidth: 0,
-      borderTopWidth: 0,
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+    borderBottomWidth: 0,
+    borderTopWidth: 0,
+      borderRadius: 40,
   });
 
   //const [images, setImage] = useState("./img/logo.png");
 
   const bannerImages = [
-    require('../img/apple_advertisement.jpeg'),
-    require('../img/tire_advertisement.jpeg'),
-    require('../img/philips_advertisement.jpeg'),
+      require('../img/Banner1.png')
   ];
 
   const saleProductsData = [];
@@ -107,7 +106,7 @@ function MainPage({navigation}) {
 
     console.log(item);
     return (
-      <View style={{paddingTop:3}}>
+      <View style={{paddingTop: 3}}>
         <Shadow
           style={{
             paddingTop: responsiveHeight(2.5),
@@ -117,8 +116,8 @@ function MainPage({navigation}) {
             shadowRadius: 10,
             borderRadius: 10,
             backgroundColor: 'white',
-              borderColor:'#E7E5E4',
-              borderWidth:0.5,
+            borderColor: '#E7E5E4',
+            borderWidth: 0.5,
             height: responsiveHeight(40),
             maxHeight: 340,
             width: responsiveWidth(45),
@@ -205,13 +204,13 @@ function MainPage({navigation}) {
           <DismissKeyboardView>
             <SearchBar
               inputContainerStyle={{
-                  backgroundColor: 'white',
-                  borderColor: 'grey',
-                  borderWidth: 0.6,
-                  borderBottomWidth: 0.6,
-                  borderRadius: 40,
-                  width: responsiveWidth(85),
-                  height: 45,
+                backgroundColor: 'white',
+                borderColor: 'grey',
+                borderWidth: 0.6,
+                borderBottomWidth: 0.6,
+                borderRadius: 40,
+                width: responsiveWidth(85),
+                height: 45,
               }}
               inputStyle={{
                 fontSize: 16,
@@ -223,43 +222,44 @@ function MainPage({navigation}) {
                 navigation.navigate('SearchResultView', text);
               }}
               searchIcon={{
-                  containerStyle:{marginLeft:8},
+                containerStyle: {marginLeft: 8},
                 size: 20,
               }}
-              rightIconContainerStyle={{marginRight:10}}
+              rightIconContainerStyle={{marginRight: 10}}
               placeholder="Aradığınız ürün burada"
               placeholderTextColor="#afafaf"
               onChangeText={(text) => setText(text)}
-              onFocus={()=> setTouchControl({
+              onFocus={() =>
+                setTouchControl({
                   alignItems: 'center',
                   backgroundColor: 'transparent',
                   borderBottomWidth: 0,
                   borderTopWidth: 0,
-                  shadowColor: "#6B7280",
-                  shadowOffset: {
-                      width: 1,
-                      height: 1,
-                  },
-                  shadowOpacity: 0.60,
+                  shadowColor: '#6B7280',
+                    borderRadius: 40,
+                  shadowOpacity: 0.6,
                   shadowRadius: 3.62,
                   elevation: 5,
-              })}
-              onBlur={() => setTouchControl({
+                })
+              }
+              onBlur={() =>
+                setTouchControl({
                   alignItems: 'center',
                   backgroundColor: 'transparent',
                   borderBottomWidth: 0,
                   borderTopWidth: 0,
-              }) }
+                    borderRadius: 40,
+                })
+              }
               clear
               value={text}
-
             />
           </DismissKeyboardView>
         </View>
         <View style={styles.SliderBoxContainer}>
           <SliderBox
             images={bannerImages}
-            sliderBoxHeight={responsiveHeight(25)}
+            sliderBoxHeight={300}
             parentWidth={responsiveWidth(90)}
             style={styles.SliderBox}
           />
@@ -326,12 +326,12 @@ const styles = StyleSheet.create({
   SliderBoxContainer: {
     width: responsiveWidth(100),
     height: 300,
-    marginTop: responsiveHeight(1),
+    marginTop: 15,
     alignItems: 'center',
   },
   SliderBox: {
     width: responsiveWidth(90),
-      height: 300,
+    height: 300,
     borderRadius: 12,
   },
   SaleContainer: {

@@ -53,6 +53,7 @@ function App() {
                           name="Cart"
                           component={CartView}
                           options={{
+                              tabBarBadge: 1,
                               tabBarLabel: 'Sepet',
                               tabBarIcon: ({color, size}) => (
                                   <Icon name="shopping-cart" color={color} size={size} />
