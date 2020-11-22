@@ -45,7 +45,7 @@ function CategoryView({route, navigation}) {
     <Avatar
       {...props}
       style={[props.style, {tintColor: null, width: 40, height: 40}]}
-      source={require('../img/iphone-xr-blue.png')}
+      source={{uri:"https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png"}}
       shape={'square'}
     />
   );
@@ -53,7 +53,7 @@ function CategoryView({route, navigation}) {
       <Avatar
           {...props}
           style={[props.style, {tintColor: null, width: 40, height: 40}]}
-          source={require('../img/sweater.webp')}
+          source={{uri:"https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweater.webp"}}
           shape={'square'}
       />
   );
@@ -61,7 +61,7 @@ function CategoryView({route, navigation}) {
       <Avatar
           {...props}
           style={[props.style, {tintColor: null, width: 40, height: 40}]}
-          source={require('../img/chair.png')}
+          source={{uri:"https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair.png"}}
           shape={'square'}
       />
   );
@@ -69,7 +69,7 @@ function CategoryView({route, navigation}) {
       <Avatar
           {...props}
           style={[props.style, {tintColor: null, width: 40, height: 40}]}
-          source={require('../img/avatar-book.png')}
+          source={{uri:"https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/avatar-book.png"}}
           shape={'square'}
       />
   );
@@ -77,7 +77,7 @@ function CategoryView({route, navigation}) {
       <Avatar
           {...props}
           style={[props.style, {tintColor: null, width: 40, height: 40}]}
-          source={require('../img/nail-polish-avatar.png')}
+          source={{uri:"https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/nail-polish-avatar.png"}}
           shape={'square'}
       />
   );
@@ -85,7 +85,7 @@ function CategoryView({route, navigation}) {
       <Avatar
           {...props}
           style={[props.style, {tintColor: null, width: 40, height: 40}]}
-          source={require('../img/cat-house-avatar.png')}
+          source={{uri:"https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/cat-house-avatar.png"}}
           shape={'square'}
       />
   );

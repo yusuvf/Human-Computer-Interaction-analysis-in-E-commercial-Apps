@@ -7,10 +7,10 @@
       "salePrice" : "",
       "itemRating" : 5,
       "imgHash" : 0,
-      "img_reference" : "iphone11-purple.png",
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone11-purple.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone 11","İphone 11","iphone 11","IPHONE 11","İPHONE 11","IPhone 11","IPHone 11","IPHOne 11","IPHONe 11","İPhone 11","İPHone 11","İPHOne 11","İPHONe 11",
-        "Iphone11","İphone11","iphone11","IPHONE11","İPHONE11","IPhone11","IPHone11","IPHOne11","IPHONe11","İPhone11","İPHone11","İPHOne11","İPHONe11"]
+        "Iphone11","İphone11","iphone11","IPHONE11","İPHONE11","IPhone11","IPHone11","IPHOne11","IPHONe11","İPhone11","İPHone11","İPHOne11","İPHONe11","i̇phone"]
     },
     {
       "id" : 1,
@@ -19,10 +19,10 @@
       "salePrice" : "",
       "itemRating" : 5,
       "imgHash" : 1,
-      "img_reference" : "iphone-xr-yellow.png",
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
     },
     {
       "id" : 2,
@@ -31,10 +31,10 @@
       "salePrice" : "",
       "itemRating" : 5,
       "imgHash" : 2,
-      "img_reference" : "iphone-xr-black.png",
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-black.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"]
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
     },
     {
       "id" : 3,
@@ -42,10 +42,10 @@
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
-      "img_reference" : "iphone-xr-orange.png",
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"],
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
       "imgHash" : 3
     },
     {
@@ -54,10 +54,10 @@
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
-      "img_reference" : "iphone-xr-red.png",
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"],
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
       "imgHash" : 4
     },
     {
@@ -66,10 +66,10 @@
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
-      "img_reference" : "iphone-xr-blue.png",
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png"],
+      "keywords" : ["Iphone","İphone","i̇phone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"],
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
       "imgHash" : 5
     },
     {
@@ -78,10 +78,10 @@
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
-      "img_reference" : "iphone-xr-white.png",
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"],
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
       "imgHash" : 6
     },
     {
@@ -90,8 +90,18 @@
       "price" : 2399.00,
       "salePrice" : 2199.00,
       "itemRating" : 5,
-      "img_reference" : "philips_speedpro_1.png",
-      "keywords" : ["süpürge","dikeysüpürge", "dikey süpürge"],
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"],
+      "keywords" : ["philips","süpürge","dikeysüpürge","dikey süpürge"],
+      "imgHash" : 7
+    },
+    {
+      "id" : 7,
+      "name" : "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
+      "price" : 2399.00,
+      "salePrice" : 2199.00,
+      "itemRating" : 5,
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"],
+      "keywords" : ["süpürge","dikeysüpürge", "dikey süpürge","iphone"],
       "imgHash" : 7
     }
   ]

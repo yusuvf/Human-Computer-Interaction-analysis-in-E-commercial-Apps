@@ -1,46 +1,14 @@
 {
   "products" : [
     {
+      "id" : 7,
       "name" : "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
-      "price" : "2399,00₺",
-      "salePrice" : "2199,00₺",
+      "price" : 2399.00,
+      "salePrice" : 2199.00,
       "itemRating" : 5,
-      "img_reference" : "philips_speedpro_1.png",
-      "keywords" : ["süpürge","dikeysüpürge", "dikey süpürge",],
-      "imgHash" : 0
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"],
+      "keywords" : ["süpürge","dikeysüpürge", "dikey süpürge"],
+      "imgHash" : 7
     },
-    {
-      "name" : "IPhone XR 64GB Sarı",
-      "price" : "6999,00₺",
-      "salePrice" : "6499,00₺",
-      "itemRating" : 4,
-      "img_reference" : "iphone-xr-yellow.png",
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"],
-      "imgHash" : 1
-    },
-    {
-      "name" : "IPhone XR 64GB Siyah",
-      "price" : "6999,00₺",
-      "salePrice" : "6499,00₺",
-      "itemRating" : 4,
-      "img_reference" : "iphone-xr-black.png",
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"],
-      "imgHash" : 2
-    },
-    {
-      "name" : "IPhone XR 64GB Turuncu",
-      "price" : "6999,00₺",
-      "salePrice" : "6499,00₺",
-      "itemRating" : 4,
-      "img_reference" : "iphone-xr-orange.png",
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","test"],
-      "imgHash" : 3
-    }
   ]
 }

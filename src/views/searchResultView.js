@@ -50,15 +50,8 @@ function findSearchedProduct(searchedText) {
   for (let i = 0; i < Products.products.length; i++) {
     for (let k = 0; k < Products.products[i].keywords.length; k++) {
       if (searchedText === Products.products[i].keywords[k]) {
-        allProducts.push({
-          id: Products.products[i].id,
-          name: Products.products[i].name,
-          price: Products.products[i].price,
-          salePrice: Products.products[i].salePrice,
-          rating: Products.products[i].itemRating,
-          img_reference: Products.products[i].img_reference,
-          imgHash: Products.products[i].imgHash,
-        });
+        allProducts.push(Products.products[i]);
+        break;
       }
     }
   }
@@ -66,18 +59,6 @@ function findSearchedProduct(searchedText) {
 }
 
 const Item = ({item, onPress}) => {
-  const images = [
-    require('../img/iphone11-purple.png'),
-    require('../img/iphone-xr-yellow.png'),
-    require('../img/iphone-xr-black.png'),
-    require('../img/iphone-xr-orange.png'),
-    require('../img/iphone-xr-red.png'),
-    require('../img/iphone-xr-blue.png'),
-    require('../img/iphone-xr-white.png'),
-    require('../img/philips_speedpro_1.png'),
-  ];
-  //console.log(item.img_reference);
-
   console.log(item);
   if (item.salePrice === '') {
     return (
@@ -85,7 +66,7 @@ const Item = ({item, onPress}) => {
         <Shadow style={styles.shadow}>
           <TouchableOpacity onPress={onPress} style={{alignItems: 'center'}}>
             <Image
-              source={images[item.imgHash]}
+              source={{uri: item.img_url[0]}}
               style={{
                 width: responsiveWidth(30),
                 maxHeight: 160,
@@ -97,12 +78,13 @@ const Item = ({item, onPress}) => {
               <AirbnbRating
                 count={5}
                 reviewSize={0.1}
-                defaultRating={item.rating}
+                defaultRating={item.itemRating}
                 size={12}
                 isDisabled={true}
               />
               <View style={{padding: 8, alignItems: 'center'}}>
                 <Text
+                  numberOfLines={2}
                   category="p1"
                   style={{
                     fontSize: 13,
@@ -115,7 +97,7 @@ const Item = ({item, onPress}) => {
                   style={{
                     alignItems: 'center',
                     position: 'absolute',
-                    marginTop: responsiveHeight(4.5),
+                    marginTop: 45,
                   }}>
                   <View style={{borderRadius: 4, padding: 3, marginTop: 3}}>
                     <Text
@@ -137,7 +119,7 @@ const Item = ({item, onPress}) => {
         <Shadow style={styles.shadow}>
           <TouchableOpacity onPress={onPress} style={{alignItems: 'center'}}>
             <Image
-              source={images[item.imgHash]}
+              source={{uri: item.img_url[0]}}
               style={{
                 width: responsiveWidth(30),
                 maxHeight: 160,
@@ -149,12 +131,13 @@ const Item = ({item, onPress}) => {
               <AirbnbRating
                 count={5}
                 reviewSize={0.1}
-                defaultRating={item.rating}
+                defaultRating={item.itemRating}
                 size={12}
                 isDisabled={true}
               />
               <View style={{padding: 8, alignItems: 'center'}}>
                 <Text
+                  numberOfLines={2}
                   category="p1"
                   style={{
                     fontSize: 13,
@@ -167,7 +150,7 @@ const Item = ({item, onPress}) => {
                   style={{
                     alignItems: 'center',
                     position: 'absolute',
-                    marginTop: responsiveHeight(4.5),
+                      marginTop: 45,
                   }}>
                   <View
                     style={{
@@ -319,12 +302,12 @@ const SearchResultView = ({route, navigation}) => {
 
 const styles = StyleSheet.create({
   ProductContainer: {
-      padding:responsiveWidth(2.5),
+    padding: responsiveWidth(2.5),
     alignItems: 'center',
   },
   container: {
     flex: 1,
-      width:responsiveWidth(100),
+    width: responsiveWidth(100),
   },
   shadow: {
     paddingTop: 15,

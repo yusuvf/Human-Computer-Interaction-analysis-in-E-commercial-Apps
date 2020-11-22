@@ -70,20 +70,11 @@ function MainPage({navigation}) {
   let count = 0;
 
   for (let index = 0; index < SaleProducts.products.length; index++) {
-    saleProductsData.push({
-      id: count,
-      name: SaleProducts.products[index].name,
-      price: SaleProducts.products[index].price,
-      onSalePrice: SaleProducts.products[index].salePrice,
-      rating: SaleProducts.products[index].itemRating,
-      img_reference: SaleProducts.products[index].img_reference,
-      imgHash: SaleProducts.products[index].imgHash,
-    });
+    saleProductsData.push(SaleProducts.products[index]);
     count++;
   }
 
   const renderItem = ({item}) => {
-    console.log(selectedId);
     return (
       <SaleItem
         item={item}
@@ -93,18 +84,9 @@ function MainPage({navigation}) {
   };
 
   const SaleItem = ({item, onPress}) => {
-    const saleImages = [
-      require('../img/philips_speedpro_1.png'),
-      require('../img/iphone-xr-yellow.png'),
-      require('../img/iphone-xr-black.png'),
-      require('../img/iphone-xr-orange.png'),
-      require('../img/iphone-xr-red.png'),
-      require('../img/iphone-xr-blue.png'),
-      require('../img/iphone-xr-white.png'),
-    ];
+
     //backgroundColor:'rgba(120,120,120,0.08)
 
-    console.log(item);
     return (
       <View style={{paddingTop: 3}}>
         <Shadow
@@ -118,8 +100,7 @@ function MainPage({navigation}) {
             backgroundColor: 'white',
             borderColor: '#E7E5E4',
             borderWidth: 0.5,
-            height: responsiveHeight(40),
-            maxHeight: 340,
+            height: 320,
             width: responsiveWidth(45),
             alignSelf: 'center',
             marginLeft: responsiveWidth(3),
@@ -127,21 +108,22 @@ function MainPage({navigation}) {
           }}>
           <TouchableOpacity onPress={onPress} style={{alignItems: 'center'}}>
             <Image
-              source={saleImages[item.imgHash]}
-              style={{width: responsiveWidth(28), height: responsiveHeight(17)}}
+                source={{uri:item.img_url[0]}}
+              style={{width: 120, height: 150}}
               PlaceholderContent={<ActivityIndicator />}
             />
             <View style={{padding: 0, alignItems: 'center'}}>
               <AirbnbRating
                 count={5}
                 reviewSize={0.1}
-                defaultRating={item.rating}
+                defaultRating={item.itemRating}
                 size={12}
                 isDisabled={true}
                 //selectedColor={'#9a4b8d'}
               />
               <View style={{padding: 8, alignItems: 'center'}}>
                 <Text
+                    numberOfLines={2}
                   category="p1"
                   style={{
                     fontSize: 13,
@@ -170,7 +152,7 @@ function MainPage({navigation}) {
                         color: 'white',
                         fontWeight: 'bold',
                       }}>
-                      {item.onSalePrice}
+                      {item.salePrice.toFixed(2) + "₺"}
                     </Text>
                   </View>
                   <Text
@@ -180,7 +162,7 @@ function MainPage({navigation}) {
                       textDecorationLine: 'line-through',
                       textDecorationStyle: 'solid',
                     }}>
-                    {item.price}
+                    {item.price.toFixed(2) + "₺"}
                   </Text>
                 </View>
               </View>
@@ -219,7 +201,8 @@ function MainPage({navigation}) {
               containerStyle={touchControl}
               returnKeyType="search"
               onSubmitEditing={() => {
-                navigation.navigate('SearchResultView', text);
+                  console.log(text.toLowerCase())
+                navigation.navigate('SearchResultView', text.toLowerCase());
               }}
               searchIcon={{
                 containerStyle: {marginLeft: 8},
@@ -339,7 +322,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'white',
     alignSelf: 'center',
-    height: responsiveHeight(50),
     marginTop: 25,
     width: responsiveWidth(90),
     /*

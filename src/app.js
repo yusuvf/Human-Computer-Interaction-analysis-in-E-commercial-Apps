@@ -46,6 +46,7 @@ function App() {
                               tabBarLabel: 'Kategoriler',
                               tabBarIcon: ({color, size}) => (
                                   <Icon name="bars" color={color} size={size} />
+                                  //list-ul
                               ),
                           }}
                       />
@@ -53,7 +54,7 @@ function App() {
                           name="Cart"
                           component={CartView}
                           options={{
-                              tabBarBadge: 1,
+                              tabBarBadge: 2,
                               tabBarLabel: 'Sepet',
                               tabBarIcon: ({color, size}) => (
                                   <Icon name="shopping-cart" color={color} size={size} />
