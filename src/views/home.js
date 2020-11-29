@@ -15,6 +15,7 @@ import Product from '../components/product';
 import {useState} from 'react';
 import {SliderBox} from 'react-native-image-slider-box';
 import GlobalStyles from './GlobalStyles';
+import Carousel from 'react-native-snap-carousel';
 
 import {Rating, AirbnbRating} from 'react-native-ratings';
 
@@ -57,14 +58,12 @@ function MainPage({navigation}) {
     backgroundColor: 'transparent',
     borderBottomWidth: 0,
     borderTopWidth: 0,
-      borderRadius: 40,
+    borderRadius: 40,
   });
 
   //const [images, setImage] = useState("./img/logo.png");
 
-  const bannerImages = [
-      require('../img/Banner1.png')
-  ];
+  const bannerImages = [require('../img/Banner1.png')];
 
   const saleProductsData = [];
   let count = 0;
@@ -84,7 +83,6 @@ function MainPage({navigation}) {
   };
 
   const SaleItem = ({item, onPress}) => {
-
     //backgroundColor:'rgba(120,120,120,0.08)
 
     return (
@@ -108,7 +106,7 @@ function MainPage({navigation}) {
           }}>
           <TouchableOpacity onPress={onPress} style={{alignItems: 'center'}}>
             <Image
-                source={{uri:item.img_url[0]}}
+              source={{uri: item.img_url[0]}}
               style={{width: 120, height: 150}}
               PlaceholderContent={<ActivityIndicator />}
             />
@@ -123,7 +121,7 @@ function MainPage({navigation}) {
               />
               <View style={{padding: 8, alignItems: 'center'}}>
                 <Text
-                    numberOfLines={2}
+                  numberOfLines={2}
                   category="p1"
                   style={{
                     fontSize: 13,
@@ -152,7 +150,7 @@ function MainPage({navigation}) {
                         color: 'white',
                         fontWeight: 'bold',
                       }}>
-                      {item.salePrice.toFixed(2) + "₺"}
+                      {item.salePrice.toFixed(2) + '₺'}
                     </Text>
                   </View>
                   <Text
@@ -162,7 +160,7 @@ function MainPage({navigation}) {
                       textDecorationLine: 'line-through',
                       textDecorationStyle: 'solid',
                     }}>
-                    {item.price.toFixed(2) + "₺"}
+                    {item.price.toFixed(2) + '₺'}
                   </Text>
                 </View>
               </View>
@@ -201,7 +199,7 @@ function MainPage({navigation}) {
               containerStyle={touchControl}
               returnKeyType="search"
               onSubmitEditing={() => {
-                  console.log(text.toLowerCase())
+                console.log(text.toLowerCase());
                 navigation.navigate('SearchResultView', text.toLowerCase());
               }}
               searchIcon={{
@@ -219,7 +217,7 @@ function MainPage({navigation}) {
                   borderBottomWidth: 0,
                   borderTopWidth: 0,
                   shadowColor: '#6B7280',
-                    borderRadius: 40,
+                  borderRadius: 40,
                   shadowOpacity: 0.6,
                   shadowRadius: 3.62,
                   elevation: 5,
@@ -231,7 +229,7 @@ function MainPage({navigation}) {
                   backgroundColor: 'transparent',
                   borderBottomWidth: 0,
                   borderTopWidth: 0,
-                    borderRadius: 40,
+                  borderRadius: 40,
                 })
               }
               clear

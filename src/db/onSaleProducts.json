@@ -3,6 +3,7 @@
     {
       "id" : 7,
       "name" : "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
+      "brand": "Philips",
       "price" : 2399.00,
       "salePrice" : 2199.00,
       "itemRating" : 5,
@@ -10,5 +11,31 @@
       "keywords" : ["süpürge","dikeysüpürge", "dikey süpürge"],
       "imgHash" : 7
     },
+    {
+      "id" : 5,
+      "name" : "IPhone XR 64GB Mavi",
+      "brand": "Apple",
+      "price" : 6999.00,
+      "salePrice" : 6499.00,
+      "itemRating" : 5,
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png"],
+      "keywords" : ["Iphone","İphone","i̇phone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
+      "imgHash" : 5
+    },
+    {
+      "id" : 6,
+      "name" : "IPhone XR 64GB Beyaz",
+      "brand": "Apple",
+      "price" : 6999.00,
+      "salePrice" : 6499.00,
+      "itemRating" : 5,
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png"],
+      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
+        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
+      "imgHash" : 6
+    }
   ]
 }

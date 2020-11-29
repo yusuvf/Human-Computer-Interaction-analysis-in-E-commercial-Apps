@@ -3,6 +3,7 @@
     {
       "id" : 0,
       "name" : "IPhone 11 64GB Mor",
+      "brand": "Apple",
       "price" : 7999.00,
       "salePrice" : "",
       "itemRating" : 5,
@@ -15,6 +16,7 @@
     {
       "id" : 1,
       "name" : "IPhone XR 64GB Sarı",
+      "brand": "Apple",
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
@@ -27,6 +29,7 @@
     {
       "id" : 2,
       "name" : "IPhone XR 64GB Siyah",
+      "brand": "Apple",
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
@@ -39,6 +42,7 @@
     {
       "id" : 3,
       "name" : "IPhone XR 64GB Turuncu",
+      "brand": "Apple",
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
@@ -51,6 +55,7 @@
     {
       "id" : 4,
       "name" : "IPhone XR 64GB Kırmızı",
+      "brand": "Apple",
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
@@ -63,6 +68,7 @@
     {
       "id" : 5,
       "name" : "IPhone XR 64GB Mavi",
+      "brand": "Apple",
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
@@ -75,6 +81,7 @@
     {
       "id" : 6,
       "name" : "IPhone XR 64GB Beyaz",
+      "brand": "Apple",
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
@@ -87,21 +94,12 @@
     {
       "id" : 7,
       "name" : "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
+      "brand": "Philips",
       "price" : 2399.00,
       "salePrice" : 2199.00,
       "itemRating" : 5,
       "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"],
       "keywords" : ["philips","süpürge","dikeysüpürge","dikey süpürge"],
-      "imgHash" : 7
-    },
-    {
-      "id" : 7,
-      "name" : "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
-      "price" : 2399.00,
-      "salePrice" : 2199.00,
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"],
-      "keywords" : ["süpürge","dikeysüpürge", "dikey süpürge","iphone"],
       "imgHash" : 7
     }
   ]

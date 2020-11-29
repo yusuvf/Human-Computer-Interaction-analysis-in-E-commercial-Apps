@@ -13,6 +13,7 @@ import ProfileView from './views/profile';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, Layout, Text, IconRegistry } from '@ui-kitten/components';
+import { default as theme } from './theme.json';
 import SearchResultView from './views/searchResultView';
 
 const Tab = createBottomTabNavigator();
@@ -21,7 +22,7 @@ function App() {
   return (
       <>
           <IconRegistry icons={EvaIconsPack} />
-          <ApplicationProvider {...eva} theme={eva.light}>
+          <ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
               <NavigationContainer>
                   <Tab.Navigator
                       initialRouteName="Home"
