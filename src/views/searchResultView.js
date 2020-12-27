@@ -59,7 +59,7 @@ function findSearchedProduct(searchedText) {
 }
 
 const Item = ({item, onPress}) => {
-  console.log(item);
+  //console.log(item);
   if (item.salePrice === '') {
     return (
       <View style={styles.ProductContainer}>
@@ -228,7 +228,7 @@ const SearchResultView = ({route, navigation}) => {
 
   const searchedText = route.params;
   let result = findSearchedProduct(searchedText);
-  console.log(result);
+  //console.log(result);
   if (result.length === 0) {
     return (
       <SafeAreaView style={styles.MainContainer}>
@@ -261,7 +261,7 @@ const SearchResultView = ({route, navigation}) => {
   //console.log(result[0].img_reference)
 
   const renderItem = ({item}) => {
-    console.log(selectedId);
+    //console.log(selectedId);
     return (
       <Item
         item={item}

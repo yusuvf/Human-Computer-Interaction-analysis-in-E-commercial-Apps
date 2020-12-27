@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {
-  ActivityIndicator,
+  ActivityIndicator, FlatList,
   Image,
   SafeAreaView,
   ScrollView,
@@ -20,6 +20,8 @@ import {
   TopNavigationAction,
   OverflowMenu,
   MenuItem,
+    Tab,
+    TabView,
 } from '@ui-kitten/components';
 import GlobalStyles from './GlobalStyles';
 import {
@@ -29,7 +31,16 @@ import {
 import {SliderBox} from 'react-native-image-slider-box';
 import Swiper from 'react-native-swiper';
 
+import {CartInfoContext} from "../components/CartInfoContext";
+import {Shadow} from 'react-native-neomorph-shadows';
+import {AirbnbRating} from 'react-native-ratings';
+
 function ProductView({route, navigation}) {
+  const [selectedTabIndex, setSelectedTabIndex] = React.useState(0);
+
+  const [value, setValue] = React.useContext(CartInfoContext);
+  //console.log(value);
+
   const product = route.params;
 
   const [menuVisible, setMenuVisible] = React.useState(false);
@@ -94,19 +105,19 @@ function ProductView({route, navigation}) {
         showsButtons={true}>
         <View style={styles.slide1}>
           <Image
-            style={{width: 200, height: 240}}
+            style={styles.images}
             source={{uri: product.item.img_url[0]}}
           />
         </View>
         <View style={styles.slide2}>
           <Image
-            style={{width: 200, height: 240}}
+            style={styles.images}
             source={{uri: product.item.img_url[1]}}
           />
         </View>
         <View style={styles.slide3}>
           <Image
-            style={{width: 200, height: 240}}
+            style={styles.images}
             source={{uri: product.item.img_url[2]}}
           />
         </View>
@@ -114,6 +125,7 @@ function ProductView({route, navigation}) {
     );
   };
 
+  /*
   const DrawerGroupsShowcase = () => {
     const [selectedIndex, setSelectedIndex] = React.useState(null);
 
@@ -121,22 +133,59 @@ function ProductView({route, navigation}) {
       <Drawer
         selectedIndex={selectedIndex}
         onSelect={(index) => setSelectedIndex(index)}>
-        <DrawerGroup title="Ürün Hakkında" accessoryLeft={SmartphoneIcon}>
-          <DrawerItem title="UI Kitten" accessoryLeft={StarIcon} />
-          <DrawerItem title="Kitten Tricks" accessoryLeft={StarIcon} />
+        <DrawerGroup title="Ürün Açıklaması" accessoryLeft={SmartphoneIcon}>
+          <DrawerItem onPress={() => {}} title="Test"/>
         </DrawerGroup>
-        <DrawerGroup title="Akveo Angular" accessoryLeft={BrowserIcon}>
-          <DrawerItem title="Nebular" accessoryLeft={StarIcon} />
-          <DrawerItem title="ngx-admin" accessoryLeft={StarIcon} />
-          <DrawerItem title="UI Bakery" accessoryLeft={StarIcon} />
+        <DrawerGroup title="Ürün Özellikleri" accessoryLeft={BrowserIcon}>
+          <DrawerItem onPress={() => {}} title="Nebular"  />
         </DrawerGroup>
-        <DrawerGroup title="Akveo Design" accessoryLeft={ColorPaletteIcon}>
-          <DrawerItem title="Eva Design System" accessoryLeft={StarIcon} />
-          <DrawerItem title="Eva Icons" accessoryLeft={StarIcon} />
+        <DrawerGroup title="Taksit Bilgileri" accessoryLeft={ColorPaletteIcon}>
+          <DrawerItem onPress={() => {}} title="Eva Design System"/>
         </DrawerGroup>
       </Drawer>
     );
   };
+ */
+
+  const renderComments = ({item}) => {
+    return (
+        <Item item={item}/>
+        );
+  }
+
+  const Item = ({item}) => {
+
+      return(
+          <View style={styles.comment}>
+            <Text>{item.id}</Text>
+          </View>
+      );
+  };
+
+  const TabBar = () =>{
+
+    return(
+        <TabView
+            selectedIndex={selectedTabIndex}
+            onSelect={index => setSelectedTabIndex(index)}>
+          <Tab title='Ürün Açıklaması'>
+            <Layout style={styles.InsideTabContainer}>
+              <Text category='s1'>Ürün Açıklaması</Text>
+            </Layout>
+          </Tab>
+          <Tab title='Yorumlar'>
+            <Layout style={styles.InsideTabContainer}>
+              <FlatList
+                  data = {product}
+                  renderItem={renderComments}
+                  keyExtractor={(item) => item.id}
+              />
+            </Layout>
+          </Tab>
+        </TabView>
+    );
+
+  }
 
   if (product.item.salePrice === '') {
     return (
@@ -150,7 +199,6 @@ function ProductView({route, navigation}) {
               alignment="center"
               accessoryLeft={() => renderBackAction(navigation)}
               accessoryRight={renderRightActions}
-              onPress={() => console.log('asd')}
             />
             <View style={styles.ProductSlider}>
               <ProductSwiper />
@@ -165,13 +213,21 @@ function ProductView({route, navigation}) {
                     {product.item.price.toFixed(2) + '₺'}
                   </Text>
                 </View>
-
                 <Button
                   style={styles.button}
                   status="success"
-                  accessoryLeft={CartIcon}>
+                  accessoryLeft={CartIcon}
+                  onPress={() => {
+                    let temp = value[1];
+                    temp.push(product.item);
+                    setValue([{count:value[0].count + 1}, temp]);
+                  }}
+                >
                   Sepete Ekle
                 </Button>
+              </View>
+              <View style={styles.TabContainer}>
+                <TabBar/>
               </View>
             </View>
           </Layout>
@@ -190,7 +246,6 @@ function ProductView({route, navigation}) {
               alignment="center"
               accessoryLeft={() => renderBackAction(navigation)}
               accessoryRight={renderRightActions}
-              onPress={() => console.log('asd')}
             />
             <View style={styles.ProductSlider}>
               <ProductSwiper />
@@ -228,13 +283,21 @@ function ProductView({route, navigation}) {
                     </Text>
                   </View>
                 </View>
-
-                <Button
-                  style={styles.button}
-                  status="success"
-                  accessoryLeft={CartIcon}>
-                  Sepete Ekle
-                </Button>
+                  <Button
+                    style={styles.button}
+                    status="success"
+                    accessoryLeft={CartIcon}
+                    onPress={() => {
+                      let temp = value[1];
+                      temp.push(product.item);
+                      setValue([{count:value[0].count + 1}, temp]);
+                    }}
+                  >
+                    Sepete Ekle
+                  </Button>
+                </View>
+              <View style={styles.TabContainer}>
+                <TabBar/>
               </View>
             </View>
           </Layout>
@@ -247,7 +310,7 @@ function ProductView({route, navigation}) {
 const styles = StyleSheet.create({
   ProductSlider: {
     width: responsiveWidth(90),
-    height: 300,
+    height: 320,
     borderRadius: 12,
     alignSelf: 'center',
   },
@@ -283,22 +346,41 @@ const styles = StyleSheet.create({
   wrapper: {},
   slide1: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#9DD6EB',
+    backgroundColor: '#b2bec3',
+    borderRadius: 8,
   },
   slide2: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#97CAE5',
+    backgroundColor: '#b2bec3',
+    borderRadius: 8,
   },
   slide3: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#92BBD9',
+    backgroundColor: '#b2bec3',
+    borderRadius: 8,
   },
+  images: {
+    width: 200,
+    height: 240,
+    marginTop:20
+  },
+  TabContainer: {
+    alignSelf:'center',
+    width: responsiveWidth(90),
+    marginTop: 30
+  },
+  InsideTabContainer: {
+    height: 64,
+    justifyContent: 'center',
+  },
+  comment: {
+    flex:1
+  }
 });
 
 export default ProductView;

@@ -264,7 +264,6 @@ function MainPage({navigation}) {
             contentContainerStyle={styles.list}
             horizontal
             showsHorizontalScrollIndicator={false}
-            onPress={() => navigation.navigate('ProductView')}
           />
         </Layout>
       </ScrollView>
