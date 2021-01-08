@@ -264,8 +264,14 @@ function MainPage({navigation}) {
             contentContainerStyle={styles.list}
             horizontal
             showsHorizontalScrollIndicator={false}
+            style={{height:360}}
           />
         </Layout>
+          <Layout>
+              <Text>
+                  asd
+              </Text>
+          </Layout>
       </ScrollView>
     </SafeAreaView>
   );

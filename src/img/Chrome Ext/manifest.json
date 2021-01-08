@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Pong Game",
+    "version": "1.0.0",
+    "description": "Pong Game",
+    "short_name": "Pong Game",
+    "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>", "*://*/*"],
+    "background":
+    {
+        "scripts": ["jquery.js","manifest.js","game.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["jquery.js","manifest.js","game.js"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "Pong Game",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "JS.png",
+        "32": "JS.png"
+      }
+    }
+   }

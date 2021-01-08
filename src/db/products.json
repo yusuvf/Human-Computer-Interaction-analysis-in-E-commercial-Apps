@@ -7,7 +7,6 @@
       "price" : 7999.00,
       "salePrice" : "",
       "itemRating" : 5,
-      "imgHash" : 0,
       "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone11-purple.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone 11","İphone 11","iphone 11","IPHONE 11","İPHONE 11","IPhone 11","IPHone 11","IPHOne 11","IPHONe 11","İPhone 11","İPHone 11","İPHOne 11","İPHONe 11",
@@ -20,7 +19,6 @@
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
-      "imgHash" : 1,
       "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
@@ -49,8 +47,7 @@
       "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
-      "imgHash" : 3
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
     },
     {
       "id" : 4,
@@ -62,8 +59,7 @@
       "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
-      "imgHash" : 4
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone","Elektronik"]
     },
     {
       "id" : 5,
@@ -72,11 +68,10 @@
       "price" : 6999.00,
       "salePrice" : "",
       "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png"],
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png","https://productimages.hepsiburada.net/s/38/1500/10598540705842.jpg"],
       "keywords" : ["Iphone","İphone","i̇phone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
-      "imgHash" : 5
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
     },
     {
       "id" : 6,
@@ -88,8 +83,7 @@
       "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png"],
       "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
         "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"],
-      "imgHash" : 6
+        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
     },
     {
       "id" : 7,
@@ -100,16 +94,55 @@
       "itemRating" : 5,
       "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"],
       "keywords" : ["philips","süpürge","dikeysüpürge","dikey süpürge"],
-      "imgHash" : 7,
       "productInfo": "Yeni SpeedPro kablosuz elektrikli süpürge, etkili erişim özelliğiyle temizlik işini hızlıca halletmenizi sağlar. 180 derecelik emiş başlığı duvar, mobilya kenarları ve köşeler gibi en zorlu noktalardaki tozları bile hassas şekilde çeker.",
       "comments": [
         {
           "rating" : 5,
-          "comment": "Gerçekten çok kaliteli bir ürün. Kablosuz olması sayesinde kablo derdi olmadan rahatlıkla evin her yerini temizleyebilirsiniz.",
+          "comment": "Gerçekten çok kaliteli bir ürün. Kablosuz olması sayesinde kablo derdi olmadan rahatlıkla evin her yerini temizleyebilirsiniz."
         },
         {
           "rating": 4,
           "comment": "Kaliteli bir ürün süpürmesi başarılı fakat şarjı daha uzun olabilirdi."
+        }
+      ]
+    },
+    {
+      "id" : 8,
+      "name" : "Sebamed Saç Dökülmesine Karşı Şampuan 400 ml",
+      "brand": "Sebamed",
+      "price" : 50.00,
+      "itemRating" : 5,
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-1.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-2.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-3.jpg"],
+      "keywords" : ["sebamed","krem","saç","saç dökülmesi"],
+      "productInfo": "Saç dökülmesine karşı bakım yapar. Saç köklerini harekete geçirerek besin ve oksijen sağlar ve saç dökülmesinin azalmasına yardımcı olur. Kafein ve Ginkgo Biloba içeren NHE formülü ile saçın korunmasına, hacim ve güç kazanmasına yardımcı olur.",
+      "comments": [
+        {
+          "rating" : 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id" : 9,
+      "name" : "Sebamed Zeytinyağlı Likit Yüz & Vücut Temizleyici 1000 ml",
+      "brand": "Sebamed",
+      "price" : 80.00,
+      "itemRating" : 4,
+      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-1.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-2.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-3.jpg"],
+      "keywords" : ["sebamed","jel","temizleyici","yüz temizleyici"],
+      "productInfo": "Sabun ve Alkali İçermez. Ekstra yumuşak ve sabun içermeyen formülü hassas cildi yumuşatır ve cildin korunmasını sağlar.",
+      "comments": [
+        {
+          "rating" : 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
         }
       ]
     }
