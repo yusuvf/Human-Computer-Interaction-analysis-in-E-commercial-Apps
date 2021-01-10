@@ -63,7 +63,7 @@ function MainPage({navigation}) {
 
   //const [images, setImage] = useState("./img/logo.png");
 
-  const bannerImages = [require('../img/Banner1.png')];
+  const bannerImages = [require('../img/Banner1.png'), require('../img/Banner2.png')];
 
   const saleProductsData = [];
   let count = 0;

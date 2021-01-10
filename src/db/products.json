@@ -1,123 +1,62 @@
 {
-  "products" : [
+  "products": [
     {
-      "id" : 0,
-      "name" : "IPhone 11 64GB Mor",
+      "id": 0,
+      "name": "IPhone 11 64GB Mor",
       "brand": "Apple",
-      "price" : 7999.00,
-      "salePrice" : "",
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone11-purple.png"],
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone 11","İphone 11","iphone 11","IPHONE 11","İPHONE 11","IPhone 11","IPHone 11","IPHOne 11","IPHONe 11","İPhone 11","İPHone 11","İPHOne 11","İPHONe 11",
-        "Iphone11","İphone11","iphone11","IPHONE11","İPHONE11","IPhone11","IPHone11","IPHOne11","IPHONe11","İPhone11","İPHone11","İPHOne11","İPHONe11","i̇phone"]
-    },
-    {
-      "id" : 1,
-      "name" : "IPhone XR 64GB Sarı",
-      "brand": "Apple",
-      "price" : 6999.00,
-      "salePrice" : "",
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow.png"],
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
-    },
-    {
-      "id" : 2,
-      "name" : "IPhone XR 64GB Siyah",
-      "brand": "Apple",
-      "price" : 6999.00,
-      "salePrice" : "",
-      "itemRating" : 5,
-      "imgHash" : 2,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-black.png"],
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
-    },
-    {
-      "id" : 3,
-      "name" : "IPhone XR 64GB Turuncu",
-      "brand": "Apple",
-      "price" : 6999.00,
-      "salePrice" : "",
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange.png"],
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
-    },
-    {
-      "id" : 4,
-      "name" : "IPhone XR 64GB Kırmızı",
-      "brand": "Apple",
-      "price" : 6999.00,
-      "salePrice" : "",
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png"],
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone","Elektronik"]
-    },
-    {
-      "id" : 5,
-      "name" : "IPhone XR 64GB Mavi",
-      "brand": "Apple",
-      "price" : 6999.00,
-      "salePrice" : "",
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png","https://productimages.hepsiburada.net/s/38/1500/10598540705842.jpg"],
-      "keywords" : ["Iphone","İphone","i̇phone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
-    },
-    {
-      "id" : 6,
-      "name" : "IPhone XR 64GB Beyaz",
-      "brand": "Apple",
-      "price" : 6999.00,
-      "salePrice" : "",
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png"],
-      "keywords" : ["Iphone","İphone","iphone","IPHONE","İPHONE","IPhone","IPHone","IPHOne","IPHONe","İPhone","İPHone","İPHOne","İPHONe",
-        "Iphone XR","İphone XR","iphone XR","IPHONE XR","İPHONE XR","IPhone XR","IPHone XR","IPHOne XR","IPHONe XR","İPhone XR","İPHone XR","İPHOne XR","İPHONe XR",
-        "IphoneXR","İphoneXR","iphoneXR","IPHONEXR","İPHONEXR","IPhoneXR","IPHoneXR","IPHOneXR","IPHONeXR","İPhoneXR","İPHoneXR","İPHOneXR","İPHONeXR","i̇phone"]
-    },
-    {
-      "id" : 7,
-      "name" : "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
-      "brand": "Philips",
-      "price" : 2399.00,
-      "salePrice" : 2199.00,
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"],
-      "keywords" : ["philips","süpürge","dikeysüpürge","dikey süpürge"],
-      "productInfo": "Yeni SpeedPro kablosuz elektrikli süpürge, etkili erişim özelliğiyle temizlik işini hızlıca halletmenizi sağlar. 180 derecelik emiş başlığı duvar, mobilya kenarları ve köşeler gibi en zorlu noktalardaki tozları bile hassas şekilde çeker.",
+      "price": 7999.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone11-purple.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone11-purple-2.webp"
+      ],
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "iphone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone 11",
+        "İphone 11",
+        "iphone 11",
+        "IPHONE 11",
+        "İPHONE 11",
+        "IPhone 11",
+        "IPHone 11",
+        "IPHOne 11",
+        "IPHONe 11",
+        "İPhone 11",
+        "İPHone 11",
+        "İPHOne 11",
+        "İPHONe 11",
+        "Iphone11",
+        "İphone11",
+        "iphone11",
+        "IPHONE11",
+        "İPHONE11",
+        "IPhone11",
+        "IPHone11",
+        "IPHOne11",
+        "IPHONe11",
+        "İPhone11",
+        "İPHone11",
+        "İPHOne11",
+        "İPHONe11",
+        "i̇phone"
+      ],
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
       "comments": [
         {
-          "rating" : 5,
-          "comment": "Gerçekten çok kaliteli bir ürün. Kablosuz olması sayesinde kablo derdi olmadan rahatlıkla evin her yerini temizleyebilirsiniz."
-        },
-        {
-          "rating": 4,
-          "comment": "Kaliteli bir ürün süpürmesi başarılı fakat şarjı daha uzun olabilirdi."
-        }
-      ]
-    },
-    {
-      "id" : 8,
-      "name" : "Sebamed Saç Dökülmesine Karşı Şampuan 400 ml",
-      "brand": "Sebamed",
-      "price" : 50.00,
-      "itemRating" : 5,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-1.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-2.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-3.jpg"],
-      "keywords" : ["sebamed","krem","saç","saç dökülmesi"],
-      "productInfo": "Saç dökülmesine karşı bakım yapar. Saç köklerini harekete geçirerek besin ve oksijen sağlar ve saç dökülmesinin azalmasına yardımcı olur. Kafein ve Ginkgo Biloba içeren NHE formülü ile saçın korunmasına, hacim ve güç kazanmasına yardımcı olur.",
-      "comments": [
-        {
-          "rating" : 5,
+          "rating": 5,
           "comment": "Gerçekten çok kaliteli bir ürün."
         },
         {
@@ -127,17 +66,713 @@
       ]
     },
     {
-      "id" : 9,
-      "name" : "Sebamed Zeytinyağlı Likit Yüz & Vücut Temizleyici 1000 ml",
+      "id": 1,
+      "name": "IPhone XR 64GB Sarı",
+      "brand": "Apple",
+      "price": 6999.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow.png"
+      ],
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "iphone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone XR",
+        "İphone XR",
+        "iphone XR",
+        "IPHONE XR",
+        "İPHONE XR",
+        "IPhone XR",
+        "IPHone XR",
+        "IPHOne XR",
+        "IPHONe XR",
+        "İPhone XR",
+        "İPHone XR",
+        "İPHOne XR",
+        "İPHONe XR",
+        "IphoneXR",
+        "İphoneXR",
+        "iphoneXR",
+        "IPHONEXR",
+        "İPHONEXR",
+        "IPhoneXR",
+        "IPHoneXR",
+        "IPHOneXR",
+        "IPHONeXR",
+        "İPhoneXR",
+        "İPHoneXR",
+        "İPHOneXR",
+        "İPHONeXR",
+        "i̇phone"
+      ],
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "IPhone XR 64GB Siyah",
+      "brand": "Apple",
+      "price": 6999.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "imgHash": 2,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-black.png"
+      ],
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "iphone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone XR",
+        "İphone XR",
+        "iphone XR",
+        "IPHONE XR",
+        "İPHONE XR",
+        "IPhone XR",
+        "IPHone XR",
+        "IPHOne XR",
+        "IPHONe XR",
+        "İPhone XR",
+        "İPHone XR",
+        "İPHOne XR",
+        "İPHONe XR",
+        "IphoneXR",
+        "İphoneXR",
+        "iphoneXR",
+        "IPHONEXR",
+        "İPHONEXR",
+        "IPhoneXR",
+        "IPHoneXR",
+        "IPHOneXR",
+        "IPHONeXR",
+        "İPhoneXR",
+        "İPHoneXR",
+        "İPHOneXR",
+        "İPHONeXR",
+        "i̇phone"
+      ],
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "IPhone XR 64GB Turuncu",
+      "brand": "Apple",
+      "price": 6999.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange.png"
+      ],
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "iphone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone XR",
+        "İphone XR",
+        "iphone XR",
+        "IPHONE XR",
+        "İPHONE XR",
+        "IPhone XR",
+        "IPHone XR",
+        "IPHOne XR",
+        "IPHONe XR",
+        "İPhone XR",
+        "İPHone XR",
+        "İPHOne XR",
+        "İPHONe XR",
+        "IphoneXR",
+        "İphoneXR",
+        "iphoneXR",
+        "IPHONEXR",
+        "İPHONEXR",
+        "IPhoneXR",
+        "IPHoneXR",
+        "IPHOneXR",
+        "IPHONeXR",
+        "İPhoneXR",
+        "İPHoneXR",
+        "İPHOneXR",
+        "İPHONeXR",
+        "i̇phone"
+      ],
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "IPhone XR 64GB Kırmızı",
+      "brand": "Apple",
+      "price": 6999.0,
+      "salePrice": 6499.0,
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png"
+      ],
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "iphone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone XR",
+        "İphone XR",
+        "iphone XR",
+        "IPHONE XR",
+        "İPHONE XR",
+        "IPhone XR",
+        "IPHone XR",
+        "IPHOne XR",
+        "IPHONe XR",
+        "İPhone XR",
+        "İPHone XR",
+        "İPHOne XR",
+        "İPHONe XR",
+        "IphoneXR",
+        "İphoneXR",
+        "iphoneXR",
+        "IPHONEXR",
+        "İPHONEXR",
+        "IPhoneXR",
+        "IPHoneXR",
+        "IPHOneXR",
+        "IPHONeXR",
+        "İPhoneXR",
+        "İPHoneXR",
+        "İPHOneXR",
+        "İPHONeXR",
+        "i̇phone",
+        "Elektronik"
+      ],
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "IPhone XR 64GB Mavi",
+      "brand": "Apple",
+      "price": 6999.0,
+      "salePrice": 6499.0,
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png",
+        "https://productimages.hepsiburada.net/s/38/1500/10598540705842.jpg"
+      ],
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "i̇phone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone XR",
+        "İphone XR",
+        "iphone XR",
+        "IPHONE XR",
+        "İPHONE XR",
+        "IPhone XR",
+        "IPHone XR",
+        "IPHOne XR",
+        "IPHONe XR",
+        "İPhone XR",
+        "İPHone XR",
+        "İPHOne XR",
+        "İPHONe XR",
+        "IphoneXR",
+        "İphoneXR",
+        "iphoneXR",
+        "IPHONEXR",
+        "İPHONEXR",
+        "IPhoneXR",
+        "IPHoneXR",
+        "IPHOneXR",
+        "IPHONeXR",
+        "İPhoneXR",
+        "İPHoneXR",
+        "İPHOneXR",
+        "İPHONeXR",
+        "i̇phone"
+      ],
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "IPhone XR 64GB Beyaz",
+      "brand": "Apple",
+      "price": 6999.0,
+      "salePrice": 6499.0,
+      "itemRating": 5,
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png"
+      ],
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "iphone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone XR",
+        "İphone XR",
+        "iphone XR",
+        "IPHONE XR",
+        "İPHONE XR",
+        "IPhone XR",
+        "IPHone XR",
+        "IPHOne XR",
+        "IPHONe XR",
+        "İPhone XR",
+        "İPHone XR",
+        "İPHOne XR",
+        "İPHONe XR",
+        "IphoneXR",
+        "İphoneXR",
+        "iphoneXR",
+        "IPHONEXR",
+        "İPHONEXR",
+        "IPhoneXR",
+        "IPHoneXR",
+        "IPHOneXR",
+        "IPHONeXR",
+        "İPhoneXR",
+        "İPHoneXR",
+        "İPHOneXR",
+        "İPHONeXR",
+        "i̇phone"
+      ],
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
+      "brand": "Philips",
+      "price": 2399.0,
+      "salePrice": 2199.0,
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"
+      ],
+      "keywords": ["philips", "süpürge", "dikeysüpürge", "dikey süpürge"],
+      "productInfo": "Yeni SpeedPro kablosuz elektrikli süpürge, etkili erişim özelliğiyle temizlik işini hızlıca halletmenizi sağlar. 180 derecelik emiş başlığı duvar, mobilya kenarları ve köşeler gibi en zorlu noktalardaki tozları bile hassas şekilde çeker.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün. Kablosuz olması sayesinde kablo derdi olmadan rahatlıkla evin her yerini temizleyebilirsiniz."
+        },
+        {
+          "rating": 4,
+          "comment": "Kaliteli bir ürün süpürmesi başarılı fakat şarjı daha uzun olabilirdi."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Sebamed Saç Dökülmesine Karşı Şampuan 400 ml",
       "brand": "Sebamed",
-      "price" : 80.00,
-      "itemRating" : 4,
-      "img_url" : ["https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-1.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-2.jpg","https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-3.jpg"],
-      "keywords" : ["sebamed","jel","temizleyici","yüz temizleyici"],
+      "price": 50.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed1-3.jpg"
+      ],
+      "keywords": [
+        "sebamed",
+        "krem",
+        "saç",
+        "saç dökülmesi",
+        "Kozmetik ve Kişisel Bakım"
+      ],
+      "productInfo": "Saç dökülmesine karşı bakım yapar. Saç köklerini harekete geçirerek besin ve oksijen sağlar ve saç dökülmesinin azalmasına yardımcı olur. Kafein ve Ginkgo Biloba içeren NHE formülü ile saçın korunmasına, hacim ve güç kazanmasına yardımcı olur.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Sebamed Zeytinyağlı Likit Yüz & Vücut Temizleyici 1000 ml",
+      "brand": "Sebamed",
+      "price": 80.0,
+      "salePrice": "",
+      "itemRating": 4,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sebamed2-3.jpg"
+      ],
+      "keywords": [
+        "sebamed",
+        "jel",
+        "temizleyici",
+        "yüz temizleyici",
+        "Kozmetik ve Kişisel Bakım"
+      ],
       "productInfo": "Sabun ve Alkali İçermez. Ekstra yumuşak ve sabun içermeyen formülü hassas cildi yumuşatır ve cildin korunmasını sağlar.",
       "comments": [
         {
-          "rating" : 5,
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Philips OneBlade",
+      "brand": "Philips",
+      "price": 449.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips-oneblade-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips-oneblade-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips-oneblade-3.jpg"
+      ],
+      "keywords": [
+        "philips",
+        "tıraş",
+        "tıraş makinesi",
+        "sakal",
+        "Kozmetik ve Kişisel Bakım"
+      ],
+      "productInfo": "Çığır açan, yeni hibrit şekillendirici Philips OneBlade, her uzunluktaki sakalı düzeltir, tıraş eder ve net hatlar, kenarlar oluşturur.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Sweatshirt",
+      "brand": "Sweatshirt",
+      "price": 99.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-1",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-2",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-3"
+      ],
+      "keywords": [
+        "sweatshirt",
+        "kazak",
+        "giyim",
+        "süveter",
+        "Moda"
+      ],
+      "productInfo": "Yüzde yüz pamuklu kaliteli sweatshirt.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Kedi Evi Yeşil",
+      "brand": "Kedi Evi",
+      "price": 499.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-1"
+      ],
+      "keywords": [
+        "kedi evi",
+        "kedi",
+        "hayvan",
+        "evcil",
+        "Evcil Hayvan Ürünleri"
+      ],
+      "productInfo": "Kediniz için tasarlanmış yüksek kaliteli kedi evi.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Kedi Yatağı",
+      "brand": "Kedi Yatağı",
+      "price": 299.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-2"
+      ],
+      "keywords": [
+        "kedi yatağı",
+        "kedi",
+        "hayvan",
+        "evcil",
+        "Evcil Hayvan Ürünleri"
+      ],
+      "productInfo": "Kediniz için tasarlanmış yüksek kaliteli kedi yatağı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Kedi Evi - Kompakt",
+      "brand": "Kedi Evi",
+      "price": 399.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-3"
+      ],
+      "keywords": [
+        "kedi yatağı",
+        "kedi",
+        "hayvan",
+        "evcil",
+        "Evcil Hayvan Ürünleri"
+      ],
+      "productInfo": "Kediniz için tasarlanmış yüksek kaliteli kompakt bir kedi evi.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Çalışma Koltuğu",
+      "brand": "Çalışma Koltuğu",
+      "price": 699.0,
+      "salePrice": "",
+      "itemRating": 4,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-1",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-2",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-3"
+      ],
+      "keywords": [
+        "Çalışma Koltuğu",
+        "koltuk",
+        "Koltuk",
+        "sandalye",
+        "Ev ve Ofis Ürünleri"
+      ],
+      "productInfo": "Çalışırken sırtınız ağrımasın diye dizayn edilmiş ergonomik çalışma koltuğu.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Çalışma Sandalyesi",
+      "brand": "Çalışma Sandalyesi",
+      "price": 499.0,
+      "salePrice": 439.0,
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-1",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-2",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-3"
+      ],
+      "keywords": [
+        "Çalışma sandalyesi",
+        "koltuk",
+        "çalışma",
+        "sandalye",
+        "Ev ve Ofis Ürünleri"
+      ],
+      "productInfo": "Çalışırken sırtınız ağrımasın diye dizayn edilmiş ergonomik çalışma sandalyesi.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Asus X515JF-BR024T Laptop 8GB",
+      "brand": "Asus",
+      "price": 7299.00,
+      "salePrice": 6999.00,
+      "itemRating": 4,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-1",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-2",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-3"
+      ],
+      "keywords": [
+        "asus",
+        "laptop",
+        "bilgisayar",
+        "dizüstü bilgisayar",
+        "Elektronik"
+      ],
+      "productInfo": "İster iş ister oyun için olsun, ASUS X515 güçlü performans ve sürükleyici görseller sunan giriş seviyesi bir dizüstü bilgisayardır. NanoEdge ekranı, gerçekten ilgi çekici bir deneyim için geniş 178 ° görüntüleme açısı ve mat parlama önleyici kaplamaya sahiptir. İçinde, hızlı çalışan bir RAM'e sahip bir 10.Nesil Intel ® Core ™ i5 işlemci ile güçlendirilmiştir.",
+      "comments": [
+        {
+          "rating": 5,
           "comment": "Gerçekten çok kaliteli bir ürün."
         },
         {

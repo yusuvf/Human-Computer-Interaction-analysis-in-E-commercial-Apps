@@ -18,7 +18,6 @@ import {
   responsiveHeight,
   responsiveWidth,
 } from 'react-native-responsive-dimensions';
-import {AirbnbRating} from 'react-native-ratings';
 
 import CategoryResult from './CategoryListView';
 

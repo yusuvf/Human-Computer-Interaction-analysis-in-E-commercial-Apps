@@ -7,6 +7,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   View,
+    Alert,
 } from 'react-native';
 import {
   Text,
@@ -78,7 +79,6 @@ function ProductView({route, navigation}) {
 
   const renderRightActions = () => (
     <React.Fragment>
-      <TopNavigationAction icon={EditIcon} />
       <OverflowMenu
         anchor={renderMenuAction}
         visible={menuVisible}
@@ -125,6 +125,15 @@ function ProductView({route, navigation}) {
     );
   };
 
+  const createTwoButtonAlert = () =>
+      Alert.alert(
+          "Ürün Sepetinize Başarıyla Eklendi",
+          [
+            { text: "Tamam", onPress: () => console.log("OK Pressed") }
+          ],
+          { cancelable: false }
+      );
+
   /*
   const DrawerGroupsShowcase = () => {
     const [selectedIndex, setSelectedIndex] = React.useState(null);
@@ -162,15 +171,14 @@ function ProductView({route, navigation}) {
       );
   };
 
-  const TabBar = () =>{
-
+  const TabBar = ({param}) =>{
     return(
         <TabView
             selectedIndex={selectedTabIndex}
             onSelect={index => setSelectedTabIndex(index)}>
           <Tab title='Ürün Açıklaması'>
             <Layout style={styles.InsideTabContainer}>
-              <Text category='s1'>Ürün Açıklaması</Text>
+              <Text category='s1'>{param.item.productInfo}</Text>
             </Layout>
           </Tab>
           <Tab title='Yorumlar'>
@@ -221,13 +229,14 @@ function ProductView({route, navigation}) {
                     let temp = value[1];
                     temp.push(product.item);
                     setValue([{count:value[0].count + 1}, temp]);
+                    createTwoButtonAlert();
                   }}
                 >
                   Sepete Ekle
                 </Button>
               </View>
               <View style={styles.TabContainer}>
-                <TabBar/>
+                <TabBar param={product}/>
               </View>
             </View>
           </Layout>
@@ -291,13 +300,14 @@ function ProductView({route, navigation}) {
                       let temp = value[1];
                       temp.push(product.item);
                       setValue([{count:value[0].count + 1}, temp]);
+                      createTwoButtonAlert();
                     }}
                   >
                     Sepete Ekle
                   </Button>
                 </View>
               <View style={styles.TabContainer}>
-                <TabBar/>
+                <TabBar param={product}/>
               </View>
             </View>
           </Layout>
@@ -348,7 +358,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     //backgroundColor: '#b2bec3',
-    borderRadius: 8,
+
     borderTopWidth: 0.3,
     borderBottomWidth:0.3,
   },
@@ -357,7 +367,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     //backgroundColor: '#b2bec3',
-    borderRadius: 8,
+
     borderTopWidth: 0.3,
     borderBottomWidth:0.3,
   },
@@ -366,7 +376,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     //backgroundColor: '#b2bec3',
-    borderRadius: 8,
+
     borderTopWidth: 0.3,
     borderBottomWidth:0.3,
   },
@@ -381,8 +391,8 @@ const styles = StyleSheet.create({
     marginTop: 30
   },
   InsideTabContainer: {
-    height: 64,
-    justifyContent: 'center',
+    paddingTop:16,
+    height: 180,
   },
   comment: {
     flex:1
