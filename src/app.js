@@ -58,7 +58,6 @@ function App() {
                   tabBarLabel: 'Kategoriler',
                   tabBarIcon: ({color, size}) => (
                     <Icon name="bars" color={color} size={size} />
-                    //list-ul
                   ),
                 }}
               />

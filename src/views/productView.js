@@ -125,11 +125,12 @@ function ProductView({route, navigation}) {
     );
   };
 
-  const createTwoButtonAlert = () =>
+  const SuccessAlert = () =>
       Alert.alert(
           "Ürün Sepetinize Başarıyla Eklendi",
+          " "
           [
-            { text: "Tamam", onPress: () => console.log("OK Pressed") }
+            { text: "OK", onPress: () => console.log("OK Pressed") }
           ],
           { cancelable: false }
       );
@@ -229,7 +230,7 @@ function ProductView({route, navigation}) {
                     let temp = value[1];
                     temp.push(product.item);
                     setValue([{count:value[0].count + 1}, temp]);
-                    createTwoButtonAlert();
+                    SuccessAlert();
                   }}
                 >
                   Sepete Ekle
@@ -300,7 +301,7 @@ function ProductView({route, navigation}) {
                       let temp = value[1];
                       temp.push(product.item);
                       setValue([{count:value[0].count + 1}, temp]);
-                      createTwoButtonAlert();
+                      SuccessAlert();
                     }}
                   >
                     Sepete Ekle

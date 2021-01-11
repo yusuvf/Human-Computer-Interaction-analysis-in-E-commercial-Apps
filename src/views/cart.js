@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useEffect} from 'react';
+import {useEffect,useState,useContext} from 'react';
 import {
   View,
   StyleSheet,
@@ -37,33 +37,53 @@ function CartViewStack() {
   );
 }
 
-let sumPricesArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-
 function CartView() {
-  const [sumPrice, setSumPrice] = React.useState(0);
-  const [selectedId, setSelectedId] = React.useState(null);
-  const [value, setValue] = React.useContext(CartInfoContext);
-  const [products, setProducts] = React.useState(value[1]);
-  let copyArray = value[1];
+  const [sumPrice, setSumPrice] = useState(0);
+  const [selectedId, setSelectedId] = useState(null);
+  const [val, setVal] = useContext(CartInfoContext);
+  const [products, setProducts] = useState(val[1]);
+  let copyArray = val[1];
 
   let myarray = [];
 
-  for (let t = 0; t < value[1].length; t++) {
+  for (let t = 0; t < val[1].length; t++) {
     myarray.push({
-      id: value[1][t].id,
-      price: value[1][t].price,
-      salePrice: value[1][t].salePrice,
+      id: val[1][t].id,
+      price: val[1][t].price,
+      salePrice: val[1][t].salePrice,
     });
   }
   console.log(myarray);
 
+  const [count, setCount] = useState(0);
 
+    useEffect(() => {
+        /*
+            let sum = 0;
 
+            for (let p = 0; p < products.length; p++){
+                if(products[p].salePrice === ''){
+                    sum = sum + products[p].price;
+                }else{
+                    sum = sum + products[p].salePrice;
+                }
+            }
+            */
+
+        console.log('başardın');
+
+        //setSumPrice(sum);
+    }, [val]);
+
+    useEffect(() => {
+
+        console.log('başarılı count');
+
+    }, [count]);
 
   const Item = ({item, onPress}) => {
     //console.log(product);
     if (item.salePrice === '') {
-
       return (
         <Layout style={styles.CartProductContainer}>
           <Image
@@ -133,25 +153,6 @@ function CartView() {
         </Layout>
       );
     } else {
-
-        useEffect(() => {
-            /*
-                let sum = 0;
-
-                for (let p = 0; p < products.length; p++){
-                    if(products[p].salePrice === ''){
-                        sum = sum + products[p].price;
-                    }else{
-                        sum = sum + products[p].salePrice;
-                    }
-                }
-                */
-
-            console.log('başarılı');
-
-            //setSumPrice(sum);
-        }, [products]);
-
       return (
         <TouchableOpacity onPress={onPress}>
           <Layout style={styles.CartProductContainer}>
@@ -167,12 +168,14 @@ function CartView() {
                   status="danger"
                   accessoryLeft={DeleteIcon}
                   onPress={() => {
+                      /*
                     for (let k = 0; k < value[1].length; k++) {
                       if (value[1][k].id === item.id) {
                         value[1].splice(k, 1);
                       }
                     }
-                    setValue(value);
+                    */
+                    //setValue(value);
                     //console.log(value);
                   }}
                 />
@@ -197,7 +200,7 @@ function CartView() {
                   color: '#663300',
                 }}
                 category="s1">
-                {itemSalePrice.toFixed(2) + '₺'}
+                {item.salePrice.toFixed(2) + '₺'}
               </Text>
               <Text
                 style={{
@@ -223,22 +226,19 @@ function CartView() {
                   buttonPressStyle={{height: 30, width: 30}}
                   buttonStyle={{height: 30, width: 30}}
                   onChange={(num) => {
+
                     let temp = copyArray;
-                    /*
-                    for (let i = 0; i < copyArray.length; i++) {
-                      if (products[i].id === item.id) {
-                        temp[i].salePrice = num * myarray[i].salePrice;
-                      }
-                    }
-                    */
+
                     copyArray.map((x, i) => {
                       if (products[i].id === x.id) {
                           temp[i].salePrice = num * myarray[i].salePrice;
                       }
                     });
-
+                      console.log(temp);
                     setProducts(temp);
-                    console.log(products[0].salePrice);
+
+                    //console.log(products[0].salePrice);
+                    //console.log(selectedId);
                     /*
                                   let sum = 0;
                                   for (let c = 0; c < products.length; c++){
@@ -263,10 +263,21 @@ function CartView() {
   };
 
   const renderCart = ({item}) => {
-    return <Item item={item} onPress={() => setSelectedId(item.id)} />;
+    return <Item item={item}
+                 onPress={() => setSelectedId(item.id + 1)} />;
   };
+    /*
+    const renderAllProducts = () => {
+        products.map( (p,i) => (
+            <Text key={i}>aaaa</Text>
+            ));
+    }
+                  {products.map((p, i) => (
+                    <Item item={p}/>
+                ))}
+     */
 
-  if (value[0].count === 0) {
+  if (val[0].count === 0) {
     return (
       <SafeAreaView style={styles.CartContainer}>
         <View>
