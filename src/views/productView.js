@@ -228,7 +228,7 @@ function ProductView({route, navigation}) {
                   accessoryLeft={CartIcon}
                   onPress={() => {
                     let temp = value[1];
-                    temp.push(product.item);
+                    temp.push(product.item.id);
                     setValue([{count:value[0].count + 1}, temp]);
                     SuccessAlert();
                   }}
@@ -299,7 +299,7 @@ function ProductView({route, navigation}) {
                     accessoryLeft={CartIcon}
                     onPress={() => {
                       let temp = value[1];
-                      temp.push(product.item);
+                      temp.push(product.item.id);
                       setValue([{count:value[0].count + 1}, temp]);
                       SuccessAlert();
                     }}

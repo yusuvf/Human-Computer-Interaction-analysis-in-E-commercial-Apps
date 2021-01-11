@@ -24,6 +24,11 @@ LogBox.ignoreAllLogs(); //Ignore all log notifications
 
 import InputSpinner from 'react-native-input-spinner';
 
+import NumericInput from 'react-native-numeric-input'
+
+let data = require('../db/products.json');
+data = data.products;
+
 const CartStack = createStackNavigator();
 
 const DeleteIcon = (props) => <Icon {...props} name="trash-2-outline" />;
@@ -41,45 +46,59 @@ function CartView() {
   const [sumPrice, setSumPrice] = useState(0);
   const [selectedId, setSelectedId] = useState(null);
   const [val, setVal] = useContext(CartInfoContext);
-  const [products, setProducts] = useState(val[1]);
-  let copyArray = val[1];
 
-  let myarray = [];
+    const [allProducts, setAllProducts] = useState([]);
 
-  for (let t = 0; t < val[1].length; t++) {
+    const [changingProducts, setChangingProducts] = useState([]);
+
+    let copyproducts = []
+    /*
+       const map = new Map(Object.entries(data));
+       console.log(map);
+
+       val[1].map((x) => {
+           if(map.has(x)){
+               console.log(map);
+           }
+       })
+
+      */
+
+    useEffect(() => {
+        console.log("useeffect çalııştıı")
+        let temp = [];
+        for (let t = 0; t<data.length; t++){
+            for (let s = 0 ; s< val[1].length; s++){
+                if(data[t].id === val[1][s]){
+                    temp.push(data[t]);
+                }
+            }
+        }
+        setAllProducts(temp);
+        //setAllProducts(state => ({ ...state, temp }));
+    }, [allProducts]);
+
+    console.log(allProducts);
+
+
+  //setMyProducts(copyproducts);
+
+
+    //console.log(myproducts);
+
+  //let myarray = [];
+
+  /*
+   for (let t = 0; t < val[1].length; t++) {
     myarray.push({
       id: val[1][t].id,
       price: val[1][t].price,
       salePrice: val[1][t].salePrice,
     });
   }
-  console.log(myarray);
+ */
 
-  const [count, setCount] = useState(0);
-
-    useEffect(() => {
-        /*
-            let sum = 0;
-
-            for (let p = 0; p < products.length; p++){
-                if(products[p].salePrice === ''){
-                    sum = sum + products[p].price;
-                }else{
-                    sum = sum + products[p].salePrice;
-                }
-            }
-            */
-
-        console.log('başardın');
-
-        //setSumPrice(sum);
-    }, [val]);
-
-    useEffect(() => {
-
-        console.log('başarılı count');
-
-    }, [count]);
+  //console.log(myarray);
 
   const Item = ({item, onPress}) => {
     //console.log(product);
@@ -154,7 +173,7 @@ function CartView() {
       );
     } else {
       return (
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity>
           <Layout style={styles.CartProductContainer}>
             <Image
               style={styles.CartProductImageContainer}
@@ -214,46 +233,34 @@ function CartView() {
                 Ücretsiz Kargo
               </Text>
               <View style={{alignSelf: 'flex-end', height: 1}}>
-                <InputSpinner
-                  max={99}
-                  min={1}
-                  step={1}
-                  colorMax={'#f04048'}
-                  colorMin={'#40739e'}
-                  value={1}
-                  style={{width: 100, marginTop: 10}}
-                  inputStyle={{backgroundColor: 'white', height: 30}}
-                  buttonPressStyle={{height: 30, width: 30}}
-                  buttonStyle={{height: 30, width: 30}}
-                  onChange={(num) => {
+                  <NumericInput
+                      value={count}
+                      onChange={value => {
+                          setCount(value)
 
-                    let temp = copyArray;
+                          let temp = copyproducts;
 
-                    copyArray.map((x, i) => {
-                      if (products[i].id === x.id) {
-                          temp[i].salePrice = num * myarray[i].salePrice;
-                      }
-                    });
-                      console.log(temp);
-                    setProducts(temp);
-
-                    //console.log(products[0].salePrice);
-                    //console.log(selectedId);
-                    /*
-                                  let sum = 0;
-                                  for (let c = 0; c < products.length; c++){
-                                      console.log(sum);
-                                      console.log(products[c].price);
-                                      if(products[c].salePrice === undefined){
-                                          sum += products[c].price;
-                                      }else{
-                                          sum += products[c].salePrice;
-                                      }
-                                  }
-                                  console.log(sum);
-                                  */
-                  }}
-                />
+                          for(let i =0; i<copyproducts.length; i++){
+                              if(item.id === copyproducts[i].id){
+                                  temp[i].salePrice = value * copyproducts[i].salePrice;
+                                  console.log(copyproducts[i].salePrice);
+                              }
+                          }
+                          setChangingProducts(copyproducts);
+                      }}
+                      onLimitReached={(isMax,msg) => console.log(isMax,msg)}
+                      totalWidth={120}
+                      totalHeight={34}
+                      iconSize={20}
+                      step={1}
+                      minValue={1}
+                      valueType='integer'
+                      rounded
+                      textColor='#B0228C'
+                      iconStyle={{ color: 'white' }}
+                      rightButtonBackgroundColor='#EA3788'
+                      leftButtonBackgroundColor='#E56B70'
+                  />
               </View>
             </View>
           </Layout>
@@ -272,6 +279,13 @@ function CartView() {
             <Text key={i}>aaaa</Text>
             ));
     }
+            <FlatList
+          style={styles.FlatListContainer}
+          data={myProducts}
+          renderItem={renderCart}
+          keyExtractor={(item) => item.id.toString()}
+        />
+
                   {products.map((p, i) => (
                     <Item item={p}/>
                 ))}
@@ -288,13 +302,7 @@ function CartView() {
   } else {
     return (
       <SafeAreaView style={styles.CartContainer}>
-        <FlatList
-          style={styles.FlatListContainer}
-          data={products}
-          renderItem={renderCart}
-          extraData={products}
-          keyExtractor={(item) => item.id.toString()}
-        />
+
         <Layout
           style={{
             flex: 1,
