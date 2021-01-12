@@ -7,9 +7,10 @@ import {
     FlatList,
     Image,
     TouchableOpacity,
+    Text,
 } from 'react-native';
 
-import {Layout, Text, Button, Icon} from '@ui-kitten/components';
+import {Layout, Button, Icon} from '@ui-kitten/components';
 
 import {CartInfoContext} from '../components/CartInfoContext';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -19,21 +20,18 @@ import {
 } from 'react-native-responsive-dimensions';
 
 import {LogBox} from 'react-native';
-LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
-LogBox.ignoreAllLogs(); //Ignore all log notifications
+LogBox.ignoreLogs(['Warning: ...']);
+LogBox.ignoreAllLogs();
 
-import InputSpinner from 'react-native-input-spinner';
-
-import NumericInput from 'react-native-numeric-input';
+import {Footer} from '../components/Footer';
 
 let data = require('../db/products.json');
+let summaryPrice = data.summaryPrice;
 data = data.products;
 
 const CartStack = createStackNavigator();
-let tempPrice = 0;
 
 const DeleteIcon = (props) => <Icon {...props} name="trash-2-outline" />;
-//trash-2-outline
 
 function CartViewStack() {
     return (
@@ -44,14 +42,11 @@ function CartViewStack() {
 }
 
 function CartView() {
-    const [sumPrice, setSumPrice] = useState();
-    const [selectedId, setSelectedId] = useState(null);
+    const [sumPrice, setSumPrice] = useState(summaryPrice);
     const [val, setVal] = useContext(CartInfoContext);
     const [allProducts, setAllProducts] = useState([]);
-    const [changingProducts, setChangingProducts] = useState(0);
 
     useEffect(() => {
-        console.log('useeffect çalııştı allproducts');
         let temp = [];
         for (let t = 0; t < data.length; t++) {
             for (let s = 0; s < val[1].length; s++) {
@@ -63,185 +58,6 @@ function CartView() {
         setAllProducts(temp);
     }, [val]);
 
-
-    /*
-    useEffect(() => {
-        async function calculate(){
-            console.log("hiii");
-        }
-
-
-        let isMounted = true; // note this flag denote mount status
-        calculate().then(data => {
-            if (isMounted) setState(data);
-        })
-        return () => { isMounted = false }; // use effect cleanup to set flag false, if unmounted
-    }, [changingProducts]);
-    */
-    /*
-    useEffect(() => {
-        console.log("değişti");
-    }, [changingProducts]);
-
-     */
-
-    const Item = ({item}) => {
-        //calculateSumPrice();
-
-        const [count, setCount] = useState(1);
-
-        if (item.salePrice === '') {
-            return (
-                <Layout style={styles.CartProductContainer}>
-                    <Image
-                        style={styles.CartProductImageContainer}
-                        source={{uri: item.img_url[0]}}
-                    />
-                    <View tyle={styles.CartProductInfoContainer}>
-                        <View>
-                            <Button
-                                style={styles.button}
-                                appearance="ghost"
-                                status="danger"
-                                accessoryLeft={DeleteIcon}
-                            />
-                        </View>
-                        <Text
-                            style={{
-                                flexWrap: 'wrap',
-                                width: 260,
-                                marginLeft: 16,
-                                height: 50,
-                            }}
-                            category="p1">
-                            {item.name}
-                        </Text>
-                        <Text
-                            style={{
-                                flexWrap: 'wrap',
-                                width: 280,
-                                marginLeft: 16,
-                                fontSize: 16,
-                                color: '#663300',
-                            }}
-                            category="s1">
-                            {item.price.toFixed(2) + '₺'}
-                        </Text>
-                        <Text
-                            style={{
-                                flexWrap: 'wrap',
-                                width: 280,
-                                marginLeft: 16,
-                                marginTop: 4,
-                                color: '#006633',
-                            }}
-                            category="s2">
-                            Ücretsiz Kargo
-                        </Text>
-                        <View style={{alignSelf: 'flex-end', height: 100}}></View>
-                    </View>
-                </Layout>
-            );
-        } else {
-            return (
-                <Layout style={styles.CartProductContainer}>
-                    <Image
-                        style={styles.CartProductImageContainer}
-                        source={{uri: item.img_url[0]}}
-                    />
-                    <View tyle={styles.CartProductInfoContainer}>
-                        <View>
-                            <Button
-                                style={styles.button}
-                                appearance="ghost"
-                                status="danger"
-                                accessoryLeft={DeleteIcon}
-                                onPress={() => {
-                                    for(let t= 0; t < val[1].length; t++){
-                                        let temp = val[1];
-                                        if(item.id === val[1][t]){
-                                            val[1].splice(t, 1);
-                                            console.log(val[1]);
-                                            setVal(val)
-                                        }
-                                    }
-                                }}
-                            />
-                        </View>
-
-                        <Text
-                            style={{
-                                flexWrap: 'wrap',
-                                width: 260,
-                                marginLeft: 16,
-                                height: 50,
-                            }}
-                            category="p1">
-                            {item.name}
-                        </Text>
-                        <Text
-                            style={{
-                                flexWrap: 'wrap',
-                                width: 280,
-                                marginLeft: 16,
-                                fontSize: 16,
-                                color: '#663300',
-                            }}
-                            category="s1">
-                            {item.salePrice.toFixed(2) + '₺'}
-                        </Text>
-                        <Text
-                            style={{
-                                flexWrap: 'wrap',
-                                width: 280,
-                                marginLeft: 16,
-                                marginTop: 4,
-                                color: '#006633',
-                            }}
-                            category="s2">
-                            Ücretsiz Kargo
-                        </Text>
-                        <View style={{alignSelf: 'flex-end', height: 1}}>
-                            {/*
-                            <Button onPress={() => calculateSumPrice(item)}>Artır</Button>
-                            <Button onPress={() => setCount(count - 1)}>Azalt</Button>*/}
-                            <NumericInput
-                value={count}
-                onChange={(value) => {
-                  setCount(value);
-                    console.log(value);
-                    console.log(sumPrice);
-                  for (let i = 0; i < allProducts.length ; i++){
-                      if(allProducts[i].id === item.id){
-                          tempPrice = allProducts[i].salePrice * value;
-                      }
-                      setSumPrice(tempPrice)
-                  }
-                }}
-                onLimitReached={(isMax, msg) => console.log(isMax, msg)}
-                totalWidth={120}
-                totalHeight={34}
-                iconSize={20}
-                step={1}
-                minValue={1}
-                valueType="integer"
-                rounded
-                textColor="#B0228C"
-                iconStyle={{color: 'white'}}
-                rightButtonBackgroundColor="#EA3788"
-                leftButtonBackgroundColor="#E56B70"
-              />
-                        </View>
-                    </View>
-                </Layout>
-            );
-        }
-    };
-
-    const renderCart = ({item}) => {
-        return <Item item={item}/>;
-    };
-
     if (val[0].count === 0) {
         return (
             <SafeAreaView style={styles.CartContainer}>
@@ -251,8 +67,16 @@ function CartView() {
             </SafeAreaView>
         );
     } else {
-        function calculateSumPrice(item) {
-            console.log(item);
+        function renderCart({item}) {
+            return (
+                <Item
+                    val={val}
+                    setVal={setVal}
+                    setSumPrice={setSumPrice}
+                    setAllProducts={setAllProducts}
+                    item={item}
+                />
+            );
         }
         return (
             <SafeAreaView style={styles.CartContainer}>
@@ -262,37 +86,141 @@ function CartView() {
                     renderItem={renderCart}
                     keyExtractor={(item) => item.id.toString()}
                 />
-                <Layout
-                    style={{
-                        flex: 1,
-                        flexDirection: 'row',
-                        bottom: 0,
-                        position: 'absolute',
-                        width: responsiveWidth(100),
-                        height: 80,
-                    }}>
-                    <Text
-                        style={{
-                            marginLeft: 16,
-                            marginTop: 30,
-                            fontSize: 17,
-                            fontWeight: '700',
-                        }}
-                        category={'s1'}>
-                        Toplam: {sumPrice + '₺'}
-                    </Text>
-                    <Button
-                        style={{marginLeft: 50, marginTop: 15, width: 180, height: 50}}
-                        status="success">
-                        <Text style={{color: 'white', fontSize: 16}} category={'s1'}>
-                            Sepeti Onayla
-                        </Text>
-                    </Button>
-                </Layout>
+                <Footer sumPrice={sumPrice} />
             </SafeAreaView>
         );
     }
 }
+
+const Item = (props) => {
+    const [item, setItem] = useState(props.item);
+
+    const increase = () => {
+        setItem((prev) => {
+            return {
+                ...prev,
+                amount: prev.amount + 1,
+            };
+        });
+        setItem((prev) => {
+            return {
+                ...prev,
+                salePrice: props.item.salePrice * prev.amount,
+            };
+        });
+        props.setSumPrice((prev) => prev + props.item.salePrice);
+    };
+    const decrease = () => {
+        setItem((prev) => {
+            return {
+                ...prev,
+                amount: prev.amount - 1,
+            };
+        });
+        setItem((prev) => {
+            return {
+                ...prev,
+                salePrice: props.item.salePrice * prev.amount,
+            };
+        });
+        props.setSumPrice((prev) => prev - props.item.salePrice);
+    };
+    function removeElement(params) {
+        props.setSumPrice((prev) => prev - props.item.salePrice * item.amount);
+    }
+
+    if (props.item.salePrice) {
+        return (
+            <Layout style={styles.CartProductContainer}>
+                <Image
+                    style={styles.CartProductImageContainer}
+                    source={{uri: props.item.img_url[0]}}
+                />
+                <View tyle={styles.CartProductInfoContainer}>
+                    <View>
+                        <Button
+                            style={styles.button}
+                            appearance="ghost"
+                            status="danger"
+                            accessoryLeft={DeleteIcon}
+                            onPress={() => {
+                                let temp = new Array();
+                                props.val[1].map((p) => {
+                                    if (props.item.id !== p) {
+                                        temp.push(p);
+                                    }
+                                });
+
+                                let object = {
+                                    count: props.val[0].count - 1,
+                                };
+                                props.setVal([object, temp]);
+                                console.log('props.val', props.val);
+                                removeElement();
+                                // props.setAllProducts((prev) => {
+                                //   for (let [i, user] of prev.entries()) {
+                                //     if (user.id == props.item.id) {
+                                //       prev.splice(i, 1);
+                                //     }
+                                //   }
+                                //   return prev;
+                                // });
+                            }}
+                        />
+                    </View>
+
+                    <Text
+                        style={{
+                            flexWrap: 'wrap',
+                            width: 260,
+                            marginLeft: 16,
+                            height: 50,
+                        }}
+                        category="p1">
+                        {props.item.name}
+                    </Text>
+                    <Text
+                        style={{
+                            flexWrap: 'wrap',
+                            width: 280,
+                            marginLeft: 16,
+                            fontSize: 16,
+                            color: '#663300',
+                        }}
+                        category="s1">
+                        {item.salePrice.toFixed(2) + '₺'}
+                    </Text>
+                    <Text
+                        style={{
+                            flexWrap: 'wrap',
+                            width: 280,
+                            marginLeft: 16,
+                            marginTop: 4,
+                            color: '#006633',
+                        }}
+                        category="s2">
+                        Ücretsiz Kargo
+                    </Text>
+                    <View
+                        style={{
+                            alignSelf: 'flex-end',
+                            flexDirection: 'row',
+                            alignContent: 'space-between',
+                            justifyContent: 'center',
+                            alignItems:'center'
+                        }}>
+                        <Button style={styles.decreaseButton} disabled={item.amount === 0} onPress={() => decrease(item)}>-</Button>
+                        <Text style={{fontSize: 16, paddingLeft:8, paddingRight:8}} category="s2">
+                            {item.amount}
+                        </Text>
+                        <Button style={styles.increaseButton} onPress={() => increase(item)}>+</Button>
+                    </View>
+                </View>
+            </Layout>
+        );
+    } else {
+    }
+};
 
 const styles = StyleSheet.create({
     CartContainer: {
@@ -324,6 +252,12 @@ const styles = StyleSheet.create({
         marginRight: 6,
         alignSelf: 'flex-end',
     },
+    decreaseButton:{
+        height: 20
+    },
+    increaseButton:{
+        height:20
+    }
 });
 
 export default CartViewStack;

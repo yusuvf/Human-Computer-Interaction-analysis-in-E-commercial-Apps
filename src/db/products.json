@@ -1,7 +1,9 @@
 {
+  "summaryPrice": 0,
   "products": [
     {
       "id": 0,
+      "amount": 0,
       "name": "IPhone 11 64GB Mor",
       "brand": "Apple",
       "price": 7999.0,
@@ -68,6 +70,7 @@
     {
       "id": 1,
       "name": "IPhone XR 64GB Sarı",
+      "amount": 0,
       "brand": "Apple",
       "price": 6999.0,
       "salePrice": "",
@@ -133,6 +136,7 @@
       "id": 2,
       "name": "IPhone XR 64GB Siyah",
       "brand": "Apple",
+      "amount": 0,
       "price": 6999.0,
       "salePrice": "",
       "itemRating": 5,
@@ -199,6 +203,7 @@
       "name": "IPhone XR 64GB Turuncu",
       "brand": "Apple",
       "price": 6999.0,
+      "amount": 0,
       "salePrice": "",
       "itemRating": 5,
       "img_url": [
@@ -263,6 +268,7 @@
       "name": "IPhone XR 64GB Kırmızı",
       "brand": "Apple",
       "price": 6999.0,
+      "amount": 0,
       "salePrice": 6499.0,
       "itemRating": 5,
       "img_url": [
@@ -329,6 +335,7 @@
       "brand": "Apple",
       "price": 6999.0,
       "salePrice": 6499.0,
+      "amount": 0,
       "itemRating": 5,
       "img_url": [
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png",
@@ -392,6 +399,7 @@
       "id": 6,
       "name": "IPhone XR 64GB Beyaz",
       "brand": "Apple",
+      "amount": 0,
       "price": 6999.0,
       "salePrice": 6499.0,
       "itemRating": 5,
@@ -458,6 +466,7 @@
       "brand": "Philips",
       "price": 2399.0,
       "salePrice": 2199.0,
+      "amount": 0,
       "itemRating": 5,
       "img_url": [
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png",
@@ -582,13 +591,7 @@
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-2",
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-3"
       ],
-      "keywords": [
-        "sweatshirt",
-        "kazak",
-        "giyim",
-        "süveter",
-        "Moda"
-      ],
+      "keywords": ["sweatshirt", "kazak", "giyim", "süveter", "Moda"],
       "productInfo": "Yüzde yüz pamuklu kaliteli sweatshirt.",
       "comments": [
         {
@@ -754,8 +757,8 @@
       "id": 15,
       "name": "Asus X515JF-BR024T Laptop 8GB",
       "brand": "Asus",
-      "price": 7299.00,
-      "salePrice": 6999.00,
+      "price": 7299.0,
+      "salePrice": 6999.0,
       "itemRating": 4,
       "img_url": [
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-1",
