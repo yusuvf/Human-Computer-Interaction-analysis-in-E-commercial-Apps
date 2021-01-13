@@ -6,6 +6,7 @@
       "brand": "Philips",
       "price": 2399.0,
       "salePrice": 2199.0,
+      "amount": 0,
       "itemRating": 5,
       "img_url": [
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png",
@@ -26,143 +27,17 @@
       ]
     },
     {
-      "id": 5,
-      "name": "IPhone XR 64GB Mavi",
-      "brand": "Apple",
-      "price": 6999.0,
-      "salePrice": 6499.0,
-      "itemRating": 5,
-      "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png",
-        "https://productimages.hepsiburada.net/s/38/1500/10598540705842.jpg"
-      ],
-      "keywords": [
-        "Iphone",
-        "İphone",
-        "i̇phone",
-        "IPHONE",
-        "İPHONE",
-        "IPhone",
-        "IPHone",
-        "IPHOne",
-        "IPHONe",
-        "İPhone",
-        "İPHone",
-        "İPHOne",
-        "İPHONe",
-        "Iphone XR",
-        "İphone XR",
-        "iphone XR",
-        "IPHONE XR",
-        "İPHONE XR",
-        "IPhone XR",
-        "IPHone XR",
-        "IPHOne XR",
-        "IPHONe XR",
-        "İPhone XR",
-        "İPHone XR",
-        "İPHOne XR",
-        "İPHONe XR",
-        "IphoneXR",
-        "İphoneXR",
-        "iphoneXR",
-        "IPHONEXR",
-        "İPHONEXR",
-        "IPhoneXR",
-        "IPHoneXR",
-        "IPHOneXR",
-        "IPHONeXR",
-        "İPhoneXR",
-        "İPHoneXR",
-        "İPHOneXR",
-        "İPHONeXR",
-        "i̇phone"
-      ],
-      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
-      "comments": [
-        {
-          "rating": 5,
-          "comment": "Gerçekten çok kaliteli bir ürün."
-        },
-        {
-          "rating": 4,
-          "comment": "Memnun kaldım."
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "IPhone XR 64GB Beyaz",
-      "brand": "Apple",
-      "price": 6999.0,
-      "salePrice": 6499.0,
-      "itemRating": 5,
-      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
-      "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png"
-      ],
-      "keywords": [
-        "Iphone",
-        "İphone",
-        "iphone",
-        "IPHONE",
-        "İPHONE",
-        "IPhone",
-        "IPHone",
-        "IPHOne",
-        "IPHONe",
-        "İPhone",
-        "İPHone",
-        "İPHOne",
-        "İPHONe",
-        "Iphone XR",
-        "İphone XR",
-        "iphone XR",
-        "IPHONE XR",
-        "İPHONE XR",
-        "IPhone XR",
-        "IPHone XR",
-        "IPHOne XR",
-        "IPHONe XR",
-        "İPhone XR",
-        "İPHone XR",
-        "İPHOne XR",
-        "İPHONe XR",
-        "IphoneXR",
-        "İphoneXR",
-        "iphoneXR",
-        "IPHONEXR",
-        "İPHONEXR",
-        "IPhoneXR",
-        "IPHoneXR",
-        "IPHOneXR",
-        "IPHONeXR",
-        "İPhoneXR",
-        "İPHoneXR",
-        "İPHOneXR",
-        "İPHONeXR",
-        "i̇phone"
-      ],
-      "comments": [
-        {
-          "rating": 5,
-          "comment": "Gerçekten çok kaliteli bir ürün."
-        },
-        {
-          "rating": 4,
-          "comment": "Memnun kaldım."
-        }
-      ]
-    },
-    {
       "id": 4,
       "name": "IPhone XR 64GB Kırmızı",
       "brand": "Apple",
       "price": 6999.0,
+      "amount": 0,
       "salePrice": 6499.0,
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red-3.jpg"
       ],
       "keywords": [
         "Iphone",
@@ -208,6 +83,107 @@
         "Elektronik"
       ],
       "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "IPhone XR 64GB Mavi",
+      "brand": "Apple",
+      "price": 6999.0,
+      "salePrice": 6499.0,
+      "amount": 0,
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue-3.jpg"
+      ],
+      "keywords": [
+        "Iphone",
+        "İphone",
+        "i̇phone",
+        "IPHONE",
+        "İPHONE",
+        "IPhone",
+        "IPHone",
+        "IPHOne",
+        "IPHONe",
+        "İPhone",
+        "İPHone",
+        "İPHOne",
+        "İPHONe",
+        "Iphone XR",
+        "İphone XR",
+        "iphone XR",
+        "IPHONE XR",
+        "İPHONE XR",
+        "IPhone XR",
+        "IPHone XR",
+        "IPHOne XR",
+        "IPHONe XR",
+        "İPhone XR",
+        "İPHone XR",
+        "İPHOne XR",
+        "İPHONe XR",
+        "IphoneXR",
+        "İphoneXR",
+        "iphoneXR",
+        "IPHONEXR",
+        "İPHONEXR",
+        "IPhoneXR",
+        "IPHoneXR",
+        "IPHOneXR",
+        "IPHONeXR",
+        "İPhoneXR",
+        "İPHoneXR",
+        "İPHOneXR",
+        "İPHONeXR",
+        "i̇phone"
+      ],
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "amount": 0,
+      "name": "Xbox Series S",
+      "brand": "Xbox",
+      "price": 4999.0,
+      "salePrice": 4799.0,
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-series-s-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-series-s-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-series-s-3.jpg"
+      ],
+      "keywords": [
+        "xbox",
+        "xbox series",
+        "xbox series s",
+        "series",
+        "oyun konsolu",
+        "konsol",
+        "Hobi Ürünleri"
+      ],
+      "productInfo": "Şimdiye kadarki en küçük boyutlu ve en şık Xbox konsolu olan Xbox Series S ile tanışın. Yeni nesil tamamen dijital bir konsolun hızını ve performansını uygun bir fiyat karşılığında deneyimleyin.",
       "comments": [
         {
           "rating": 5,

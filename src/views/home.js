@@ -61,8 +61,6 @@ function MainPage({navigation}) {
     borderRadius: 40,
   });
 
-  //const [images, setImage] = useState("./img/logo.png");
-
   const bannerImages = [require('../img/Banner1.png'), require('../img/Banner2.png')];
 
   const saleProductsData = [];
@@ -186,8 +184,8 @@ function MainPage({navigation}) {
               inputContainerStyle={{
                 backgroundColor: 'white',
                 borderColor: 'grey',
-                borderWidth: 0.6,
-                borderBottomWidth: 0.6,
+                borderWidth: 0.8,
+                borderBottomWidth: 0.8,
                 borderRadius: 40,
                 width: responsiveWidth(85),
                 height: 45,
@@ -258,7 +256,6 @@ function MainPage({navigation}) {
           <FlatList
             data={saleProductsData}
             renderItem={renderItem}
-            //keyExtractor={(item) => item.id}
             keyExtractor={(item, index) => index.toString()}
             extraData={selectedId}
             contentContainerStyle={styles.list}
@@ -267,10 +264,11 @@ function MainPage({navigation}) {
             style={{height:360}}
           />
         </Layout>
-          <Layout>
-              <Text>
-                  asd
-              </Text>
+          <Layout style={{justifyContent:'center', alignItems:'center', marginTop:20}}>
+              <Image
+                  style={{width: 373, height: 90}}
+                  source={require('../img/Reklam.png')}
+              />
           </Layout>
       </ScrollView>
     </SafeAreaView>
@@ -305,7 +303,8 @@ const styles = StyleSheet.create({
   LogoContainer: {
     width: responsiveWidth(100),
     height: responsiveHeight(5),
-    marginBottom: responsiveHeight(2),
+    marginBottom: 25,
+      marginTop: 25,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -325,7 +324,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'white',
     alignSelf: 'center',
-    marginTop: 25,
+    marginTop: 28,
     width: responsiveWidth(90),
     /*
     borderRadius: 6,

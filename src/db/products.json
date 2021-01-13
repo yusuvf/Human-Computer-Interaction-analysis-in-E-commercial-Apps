@@ -76,7 +76,9 @@
       "salePrice": "",
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow.png"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-yellow-3.jpg"
       ],
       "keywords": [
         "Iphone",
@@ -142,7 +144,9 @@
       "itemRating": 5,
       "imgHash": 2,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-black.png"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-black.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-black-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-black-3.jpg"
       ],
       "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
       "keywords": [
@@ -207,7 +211,9 @@
       "salePrice": "",
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange.png"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-orange-3.jpg"
       ],
       "keywords": [
         "Iphone",
@@ -272,7 +278,9 @@
       "salePrice": 6499.0,
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red-3.jpg"
       ],
       "keywords": [
         "Iphone",
@@ -339,7 +347,8 @@
       "itemRating": 5,
       "img_url": [
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue.png",
-        "https://productimages.hepsiburada.net/s/38/1500/10598540705842.jpg"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-blue-3.jpg"
       ],
       "keywords": [
         "Iphone",
@@ -405,7 +414,9 @@
       "itemRating": 5,
       "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white.png",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-white-3.jpg"
       ],
       "keywords": [
         "Iphone",
@@ -488,6 +499,7 @@
     },
     {
       "id": 8,
+      "amount": 0,
       "name": "Sebamed Saç Dökülmesine Karşı Şampuan 400 ml",
       "brand": "Sebamed",
       "price": 50.0,
@@ -519,6 +531,7 @@
     },
     {
       "id": 9,
+      "amount": 0,
       "name": "Sebamed Zeytinyağlı Likit Yüz & Vücut Temizleyici 1000 ml",
       "brand": "Sebamed",
       "price": 80.0,
@@ -550,6 +563,7 @@
     },
     {
       "id": 10,
+      "amount": 0,
       "name": "Philips OneBlade",
       "brand": "Philips",
       "price": 449.0,
@@ -581,15 +595,16 @@
     },
     {
       "id": 11,
+      "amount": 0,
       "name": "Sweatshirt",
       "brand": "Sweatshirt",
       "price": 99.0,
       "salePrice": "",
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-1",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-2",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-3"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/sweatshirt1-3.jpg"
       ],
       "keywords": ["sweatshirt", "kazak", "giyim", "süveter", "Moda"],
       "productInfo": "Yüzde yüz pamuklu kaliteli sweatshirt.",
@@ -606,13 +621,14 @@
     },
     {
       "id": 12,
+      "amount": 0,
       "name": "Kedi Evi Yeşil",
       "brand": "Kedi Evi",
       "price": 499.0,
       "salePrice": "",
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-1"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-1.jpg"
       ],
       "keywords": [
         "kedi evi",
@@ -635,13 +651,14 @@
     },
     {
       "id": 12,
+      "amount": 0,
       "name": "Kedi Yatağı",
       "brand": "Kedi Yatağı",
       "price": 299.0,
       "salePrice": "",
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-2"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-2.jpg"
       ],
       "keywords": [
         "kedi yatağı",
@@ -664,13 +681,14 @@
     },
     {
       "id": 12,
+      "amount": 0,
       "name": "Kedi Evi - Kompakt",
       "brand": "Kedi Evi",
       "price": 399.0,
       "salePrice": "",
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-3"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/pethouse-3.jpg"
       ],
       "keywords": [
         "kedi yatağı",
@@ -693,15 +711,16 @@
     },
     {
       "id": 13,
+      "amount": 0,
       "name": "Çalışma Koltuğu",
       "brand": "Çalışma Koltuğu",
       "price": 699.0,
       "salePrice": "",
       "itemRating": 4,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-1",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-2",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-3"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair3-3.jpg"
       ],
       "keywords": [
         "Çalışma Koltuğu",
@@ -724,15 +743,16 @@
     },
     {
       "id": 14,
+      "amount": 0,
       "name": "Çalışma Sandalyesi",
       "brand": "Çalışma Sandalyesi",
       "price": 499.0,
       "salePrice": 439.0,
       "itemRating": 5,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-1",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-2",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-3"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/chair2-3.jpg"
       ],
       "keywords": [
         "Çalışma sandalyesi",
@@ -755,15 +775,16 @@
     },
     {
       "id": 15,
+      "amount": 0,
       "name": "Asus X515JF-BR024T Laptop 8GB",
       "brand": "Asus",
       "price": 7299.0,
       "salePrice": 6999.0,
       "itemRating": 4,
       "img_url": [
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-1",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-2",
-        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-3"
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/asuslaptop-3.jpg"
       ],
       "keywords": [
         "asus",
@@ -773,6 +794,106 @@
         "Elektronik"
       ],
       "productInfo": "İster iş ister oyun için olsun, ASUS X515 güçlü performans ve sürükleyici görseller sunan giriş seviyesi bir dizüstü bilgisayardır. NanoEdge ekranı, gerçekten ilgi çekici bir deneyim için geniş 178 ° görüntüleme açısı ve mat parlama önleyici kaplamaya sahiptir. İçinde, hızlı çalışan bir RAM'e sahip bir 10.Nesil Intel ® Core ™ i5 işlemci ile güçlendirilmiştir.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "amount": 0,
+      "name": "Xbox Series S",
+      "brand": "Xbox",
+      "price": 4999.0,
+      "salePrice": 4799.0,
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-series-s-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-series-s-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-series-s-3.jpg"
+      ],
+      "keywords": [
+        "xbox",
+        "xbox series",
+        "xbox series s",
+        "series",
+        "oyun konsolu",
+        "konsol",
+        "Hobi Ürünleri"
+      ],
+      "productInfo": "Şimdiye kadarki en küçük boyutlu ve en şık Xbox konsolu olan Xbox Series S ile tanışın. Yeni nesil tamamen dijital bir konsolun hızını ve performansını uygun bir fiyat karşılığında deneyimleyin.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "amount": 0,
+      "name": "Xbox One S",
+      "brand": "Xbox",
+      "price": 2999.0,
+      "salePrice": 2799.0,
+      "itemRating": 3,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-one-s-1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-one-s-2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/xbox-one-s-3.jpg"
+      ],
+      "keywords": [
+        "xbox",
+        "xbox one",
+        "xbox one s",
+        "one",
+        "oyun konsolu",
+        "konsol",
+        "Hobi Ürünleri"
+      ],
+      "productInfo": "Oyun ve eğlence için en iyi fiyat\nİster 4K film seyrediyor ister oyun yayımlıyor olun, Xbox One'da oyun deneyimi hiçbir zaman bu kadar iyi olmamıştı.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Gerçekten çok kaliteli bir ürün."
+        },
+        {
+          "rating": 4,
+          "comment": "Memnun kaldım."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "amount": 0,
+      "name": "Braun MQ745 Aperitive Multiquick 7 El Blender Seti",
+      "brand": "Braun",
+      "price": 699.0,
+      "salePrice": "",
+      "itemRating": 5,
+      "img_url": [
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/braun1.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/braun2.jpg",
+        "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/braun3.jpg"
+      ],
+      "keywords": [
+        "braun",
+        "blender",
+        "blender seti",
+        "Braun",
+        "Elektronik"
+      ],
+      "productInfo": "Blender Seti Motor Gücü: 750 Watt MQ7 serisi el blenderleri Smart Speed adlı, devrim niteliği taşıyan bir akıllı hız teknolojisine sahip olarak tasarlanmıştır.\nNe kadar sıkı tutarsanız o kadar güçlü çalışır. El blenderinin hızını standart ayarlama tuşuna basarak arttırabilir, tek elinizle gerçek zamanlı hız değiştirerek, kesintiye uğramadan tüm tariflerinizi kolayca hazırlayabilirsiniz.",
       "comments": [
         {
           "rating": 5,

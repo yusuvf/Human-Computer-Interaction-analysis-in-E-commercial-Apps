@@ -57,6 +57,35 @@ function findSearchedProduct(searchedText) {
   }
   return allProducts;
 }
+/*
+              {
+                                        <AirbnbRating
+                              count={5}
+                              reviewSize={0.1}
+                              defaultRating={5}
+                              size={12}
+                              isDisabled={true}
+                          />
+                comments.map((x) => {
+                  return(
+                      <View style={{flex:1, flexDirection:'row'}}>
+                        <View style={{borderWidth:1, borderRadius: 28, borderColor:'grey', width:50, height:50,alignItems:'center', justifyContent:'center'}}>
+                          <Icon
+                              style={{height:40, width:40}}
+                              fill='#8F9BB3'
+                              name='person'
+                          />
+                        </View>
+                        <View style={{flex:0.95, marginLeft:12}}>
+                          <Text>
+                            {x.comment}
+                          </Text>
+                        </View>
+                      </View>
+                  );
+                })
+              }
+ */
 
 const Item = ({item, onPress}) => {
   //console.log(item);

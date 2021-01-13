@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {TextInput, View} from 'react-native';
+import {TextInput, View,Dimensions} from 'react-native';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -28,7 +28,7 @@ const Tab = createBottomTabNavigator();
 
 function App() {
   const [value, setValue] = React.useState([{count: 0}, []]);
-
+    console.log(Dimensions.get('window').width);
   return (
     <>
       <IconRegistry icons={EvaIconsPack} />

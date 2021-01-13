@@ -56,6 +56,8 @@ function ProductView({route, navigation}) {
 
   const LogoutIcon = (props) => <Icon {...props} name="log-out" />;
 
+  const personIcon = (props) => <Icon {...props} name="person" />;
+
   const SmartphoneIcon = (props) => (
     <Icon {...props} name="smartphone-outline" />
   );
@@ -164,7 +166,7 @@ function ProductView({route, navigation}) {
   }
 
   const Item = ({item}) => {
-
+    console.log(item);
       return(
           <View style={styles.comment}>
             <Text>{item.id}</Text>
@@ -173,27 +175,50 @@ function ProductView({route, navigation}) {
   };
 
   const TabBar = ({param}) =>{
+    let comments = param.item.comments;
     return(
         <TabView
             selectedIndex={selectedTabIndex}
             onSelect={index => setSelectedTabIndex(index)}>
           <Tab title='Ürün Açıklaması'>
-            <Layout style={styles.InsideTabContainer}>
+            <Layout style={styles.InsideTabContainer1}>
               <Text category='s1'>{param.item.productInfo}</Text>
             </Layout>
           </Tab>
           <Tab title='Yorumlar'>
             <Layout style={styles.InsideTabContainer}>
-              <FlatList
-                  data = {product}
-                  renderItem={renderComments}
-                  keyExtractor={(item) => item.id}
-              />
+              {
+                comments.map((x) => {
+                  return(
+                      <View style={{flex:1, flexDirection:'row', alignSelf:'center', justifyContent:'center', alignItems:'center',     borderColor:'grey',
+                        borderRadius: 6, borderWidth:0.8, marginBottom:6}}>
+                        <View style={{width:80, height:80,alignItems:'center', justifyContent:'center'}}>
+                          <View style={{borderWidth:0.7, borderRadius: 28, borderColor:'grey', height:50, width:50, alignItems:'center', justifyContent:'center'}}>
+                            <Icon
+                                style={{height:36, width:36}}
+                                fill='#8F9BB3'
+                                name='person'
+                            />
+                          </View>
+                          <View>
+                            <Text>
+                              Ahmet
+                            </Text>
+                          </View>
+                        </View>
+                        <View style={{flex:1, marginLeft:6, justifyContent:'center', flexWrap:'nowrap'}}>
+                          <Text style={{width:270}}>
+                            {x.comment}
+                          </Text>
+                        </View>
+                      </View>
+                  );
+                })
+              }
             </Layout>
           </Tab>
         </TabView>
     );
-
   }
 
   if (product.item.salePrice === '') {
@@ -218,7 +243,7 @@ function ProductView({route, navigation}) {
               </View>
               <View style={styles.PriceButtonContainer}>
                 <View style={styles.priceContainer}>
-                  <Text category="s1" style={{fontSize: 16}}>
+                  <Text category="s1" style={{fontSize: 18}}>
                     {product.item.price.toFixed(2) + '₺'}
                   </Text>
                 </View>
@@ -284,7 +309,7 @@ function ProductView({route, navigation}) {
                     <Text
                       category="s1"
                       style={{
-                        fontSize: 16,
+                        fontSize: 17,
                         fontWeight: 'bold',
                         color: 'white',
                         textAlign: 'center',
@@ -392,10 +417,17 @@ const styles = StyleSheet.create({
     marginTop: 30
   },
   InsideTabContainer: {
-    paddingTop:16,
-    height: 180,
+    marginTop:6,
+    height: 240,
+    width:responsiveWidth(88),
+    alignItems:'center',
+    alignSelf:'center'
   },
   comment: {
+    flex:1
+  },
+  InsideTabContainer1: {
+    padding:12,
     flex:1
   }
 });

@@ -29,18 +29,20 @@ export const Footer = (props) => {
                 width: responsiveWidth(100),
                 height: 80,
             }}>
-            <Text
-                style={{
-                    marginLeft: 16,
-                    marginTop: 30,
-                    fontSize: 17,
-                    fontWeight: '700',
-                }}
-                category={'s1'}>
-                Toplam: {props.sumPrice + '₺'}
-            </Text>
+            <View style={{width:160}}>
+                <Text
+                    style={{
+                        marginLeft: 16,
+                        marginTop: 30,
+                        fontSize: 17,
+                        fontWeight: '700',
+                    }}
+                    category={'s1'}>
+                    Toplam: {props.sumPrice + '₺'}
+                </Text>
+            </View>
             <Button
-                style={{marginLeft: 50, marginTop: 15, width: 180, height: 50}}
+                style={{marginLeft: 60, marginTop: 15, width: 180, height: 50}}
                 status="success">
                 <Text style={{color: 'white', fontSize: 16}} category={'s1'}>
                     Sepeti Onayla
