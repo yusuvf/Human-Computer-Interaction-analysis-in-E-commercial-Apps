@@ -14,11 +14,15 @@
         "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"
       ],
       "keywords": ["philips", "süpürge", "dikeysüpürge", "dikey süpürge"],
-      "productInfo": "Yeni SpeedPro kablosuz elektrikli süpürge, etkili erişim özelliğiyle temizlik işini hızlıca halletmenizi sağlar. 180 derecelik emiş başlığı duvar, mobilya kenarları ve köşeler gibi en zorlu noktalardaki tozları bile hassas şekilde çeker.",
+      "productInfo": "Yeni SpeedPro kablosuz elektrikli süpürge, etkili erişim özelliğiyle temizlik işini hızlıca halletmenizi sağlar.\n\n180 derecelik emiş başlığı duvar, mobilya kenarları ve köşeler gibi en zorlu noktalardaki tozları bile hassas şekilde çeker.",
       "comments": [
         {
           "rating": 5,
           "comment": "Gerçekten çok kaliteli bir ürün. Kablosuz olması sayesinde kablo derdi olmadan rahatlıkla evin her yerini temizleyebilirsiniz."
+        },
+        {
+          "rating": 4,
+          "comment": "Kaliteli bir ürün süpürmesi başarılı fakat şarjı daha uzun olabilirdi."
         },
         {
           "rating": 4,
@@ -82,7 +86,7 @@
         "i̇phone",
         "Elektronik"
       ],
-      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\n\nDaha da hızlı Face ID.\n\nBir akıllı telefondaki en akıllı, en güçlü çip.\n\nVe çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
       "comments": [
         {
           "rating": 5,
@@ -90,7 +94,7 @@
         },
         {
           "rating": 4,
-          "comment": "Memnun kaldım."
+          "comment": "Fazla söze gerek yok, IPhone!."
         }
       ]
     },
@@ -149,7 +153,7 @@
         "İPHONeXR",
         "i̇phone"
       ],
-      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\nDaha da hızlı Face ID.\nBir akıllı telefondaki en akıllı, en güçlü çip. Ve çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+      "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\n\nDaha da hızlı Face ID.\n\nBir akıllı telefondaki en akıllı, en güçlü çip.\n\nVe çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
       "comments": [
         {
           "rating": 5,
@@ -157,7 +161,7 @@
         },
         {
           "rating": 4,
-          "comment": "Memnun kaldım."
+          "comment": "Fazla söze gerek yok, IPhone!."
         }
       ]
     },
@@ -183,15 +187,15 @@
         "konsol",
         "Hobi Ürünleri"
       ],
-      "productInfo": "Şimdiye kadarki en küçük boyutlu ve en şık Xbox konsolu olan Xbox Series S ile tanışın. Yeni nesil tamamen dijital bir konsolun hızını ve performansını uygun bir fiyat karşılığında deneyimleyin.",
+      "productInfo": "Şimdiye kadarki en küçük boyutlu ve en şık Xbox konsolu olan Xbox Series S ile tanışın.\n\nYeni nesil tamamen dijital bir konsolun hızını ve performansını uygun bir fiyat karşılığında deneyimleyin.",
       "comments": [
         {
           "rating": 5,
-          "comment": "Gerçekten çok kaliteli bir ürün."
+          "comment": "Beğendim, başarılı bir ürün."
         },
         {
           "rating": 4,
-          "comment": "Memnun kaldım."
+          "comment": "Ürün çok kaliteli bir malzemeden yapılmış."
         }
       ]
     }

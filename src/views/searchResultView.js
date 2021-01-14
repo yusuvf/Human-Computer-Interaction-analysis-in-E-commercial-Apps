@@ -38,9 +38,9 @@ const EditIcon = (props) => <Icon {...props} name="edit" />;
 
 const MenuIcon = (props) => <Icon {...props} name="more-vertical" />;
 
-const InfoIcon = (props) => <Icon {...props} name="info" />;
+const increaseIcon = (props) => <Icon {...props} name="arrowhead-up-outline"/>;
 
-const LogoutIcon = (props) => <Icon {...props} name="log-out" />;
+const decreaseIcon = (props) => <Icon {...props} name="arrowhead-down-outline"/>;
 
 const Products = require('../db/products.json');
 
@@ -220,12 +220,9 @@ const Item = ({item, onPress}) => {
 const SearchResultView = ({route, navigation}) => {
   const [menuVisible, setMenuVisible] = React.useState(false);
   const [selectedId, setSelectedId] = React.useState(null);
+    const [state,setState] = React.useState(true);
 
-  /*
-    React.useEffect(() => {
-        navigation.navigate("ProductView", selectedId)
-    }, [selectedId]);
-     */
+
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
@@ -236,13 +233,12 @@ const SearchResultView = ({route, navigation}) => {
 
   const renderRightActions = () => (
     <React.Fragment>
-      <TopNavigationAction icon={EditIcon} />
       <OverflowMenu
         anchor={renderMenuAction}
         visible={menuVisible}
         onBackdropPress={toggleMenu}>
-        <MenuItem accessoryLeft={InfoIcon} title="About" />
-        <MenuItem accessoryLeft={LogoutIcon} title="Logout" />
+        <MenuItem accessoryLeft={decreaseIcon} onPress={() => setState(true)} title="Ucuzdan Pahalıya Göre Sırala" />
+        <MenuItem accessoryLeft={increaseIcon} onPress={() => setState(false)} title="Pahalıdan Ucuza Göre Sırala" />
       </OverflowMenu>
     </React.Fragment>
   );
@@ -300,33 +296,63 @@ const SearchResultView = ({route, navigation}) => {
   };
   let flag = true;
 
-  return (
-    <SafeAreaView style={GlobalStyles.droidSafeArea}>
-      <Layout style={styles.container} level="1">
-        <TopNavigation
-          alignment="center"
-          title={'"' + searchedText + '"'}
-          subtitle="Arama Sonuçları"
-          accessoryLeft={renderBackAction}
-          accessoryRight={renderRightActions}
-        />
-        <FlatList
-          data={result.sort(function (a, b) {
-            if (a.price > b.price) return 1;
-            if (a.price < b.price) return -1;
-            return 0;
-          })}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-          extraData={selectedId}
-          //contentContainerStyle={styles.list}
-          horizontal={false}
-          numColumns={2}
-          onPress={() => navigation.navigate('ProductView')}
-        />
-      </Layout>
-    </SafeAreaView>
-  );
+  if(state===true){
+      return (
+          <SafeAreaView style={GlobalStyles.droidSafeArea}>
+              <Layout style={styles.container} level="1">
+                  <TopNavigation
+                      alignment="center"
+                      title={'"' + searchedText + '"'}
+                      subtitle="Arama Sonuçları"
+                      accessoryLeft={renderBackAction}
+                      accessoryRight={renderRightActions}
+                  />
+                  <FlatList
+                      data={result.sort(function (a, b) {
+                          if (a.price > b.price) return 1;
+                          if (a.price < b.price) return -1;
+                          return 0;
+                      })}
+                      renderItem={renderItem}
+                      keyExtractor={(item) => item.id}
+                      extraData={selectedId}
+                      //contentContainerStyle={styles.list}
+                      horizontal={false}
+                      numColumns={2}
+                      onPress={() => navigation.navigate('ProductView')}
+                  />
+              </Layout>
+          </SafeAreaView>
+      );
+  }else{
+      return (
+          <SafeAreaView style={GlobalStyles.droidSafeArea}>
+              <Layout style={styles.container} level="1">
+                  <TopNavigation
+                      alignment="center"
+                      title={'"' + searchedText + '"'}
+                      subtitle="Arama Sonuçları"
+                      accessoryLeft={renderBackAction}
+                      accessoryRight={renderRightActions}
+                  />
+                  <FlatList
+                      data={result.sort(function (a, b) {
+                          if (a.price > b.price) return -1;
+                          if (a.price < b.price) return 1;
+                          return 0;
+                      })}
+                      renderItem={renderItem}
+                      keyExtractor={(item) => item.id}
+                      extraData={selectedId}
+                      //contentContainerStyle={styles.list}
+                      horizontal={false}
+                      numColumns={2}
+                      onPress={() => navigation.navigate('ProductView')}
+                  />
+              </Layout>
+          </SafeAreaView>
+      );
+  }
 };
 
 const styles = StyleSheet.create({

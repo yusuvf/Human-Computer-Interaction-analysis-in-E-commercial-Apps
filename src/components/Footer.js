@@ -7,7 +7,7 @@ import {
     FlatList,
     Image,
     TouchableOpacity,
-    Text,
+    Text, Alert,
 } from 'react-native';
 
 import {Layout, Button, Icon} from '@ui-kitten/components';
@@ -18,6 +18,9 @@ import {
     responsiveHeight,
     responsiveWidth,
 } from 'react-native-responsive-dimensions';
+
+import HomeView from '../views/home'
+
 export const Footer = (props) => {
     return (
         <Layout
@@ -43,7 +46,37 @@ export const Footer = (props) => {
             </View>
             <Button
                 style={{marginLeft: 60, marginTop: 15, width: 180, height: 50}}
-                status="success">
+                status="success"
+                onPress={() =>{
+
+                    if(props.sumPrice===0){
+                        Alert.alert(
+                            "Lütfen seçtiğiniz ürünün adet bilgisini giriniz",
+                            " "
+                                [
+                                { text: "OK", onPress: () => console.log("OK Pressed") }
+                                ],
+                            { cancelable: false }
+                        );
+                    }else{
+                        Alert.alert(
+                            "Siparişiniz Onaylanmıştır.",
+                            " "
+                                [
+                                { text: "OK", onPress: () => console.log("OK Pressed") }
+                                ],
+                            { cancelable: false }
+                        );
+                        props.navigation.navigate("Onay");
+                        let array = props.val;
+                        array[0] = {count:0}
+                        array[2] = {flag:true}
+                        console.log(array);
+                        props.setVal(array)
+                        console.log(props.setVal);
+                    }
+                }}
+            >
                 <Text style={{color: 'white', fontSize: 16}} category={'s1'}>
                     Sepeti Onayla
                 </Text>

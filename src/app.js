@@ -27,7 +27,7 @@ import {CartInfoContext} from './components/CartInfoContext';
 const Tab = createBottomTabNavigator();
 
 function App() {
-  const [value, setValue] = React.useState([{count: 0}, []]);
+  const [value, setValue] = React.useState([{count: 0}, [], {flag:false}]);
     console.log(Dimensions.get('window').width);
   return (
     <>

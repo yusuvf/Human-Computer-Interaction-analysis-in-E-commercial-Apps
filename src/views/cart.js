@@ -7,10 +7,9 @@ import {
   FlatList,
   Image,
   TouchableOpacity,
-  Text,
 } from 'react-native';
 
-import {Layout, Button, Icon} from '@ui-kitten/components';
+import {Layout, Button, Icon,  Text} from '@ui-kitten/components';
 
 import {CartInfoContext} from '../components/CartInfoContext';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -37,6 +36,17 @@ const plusIcon = (props) => <Icon {...props} name="plus-outline" />;
 
 const minusIcon = (props) => <Icon {...props} name="minus-outline" />;
 
+function ConfirmPage({navigation}){
+
+    return(
+        <SafeAreaView>
+            <View>
+                <Text category={'s1'} style={{fontSize:18}}>Siparişiniz Onaylanmıştır.</Text>
+            </View>
+        </SafeAreaView>
+    )
+}
+
 function CartViewStack({navigation}) {
   return (
     <CartStack.Navigator>
@@ -45,6 +55,11 @@ function CartViewStack({navigation}) {
         name="Sepetim"
         component={CartView}
       />
+        <CartStack.Screen
+            navigation={navigation}
+            name="Onay"
+            component={ConfirmPage}
+        />
     </CartStack.Navigator>
   );
 }
@@ -95,7 +110,7 @@ function CartView({navigation}) {
           renderItem={renderCart}
           keyExtractor={(item) => item.id.toString()}
         />
-        <Footer sumPrice={sumPrice} />
+        <Footer navigation={navigation} sumPrice={sumPrice} setVal={setVal} val={val}/>
       </SafeAreaView>
     );
   }
@@ -200,11 +215,16 @@ const Item = (props) => {
                       temp.push(p);
                     }
                   });
-
-                  let object = {
-                    count: props.val[0].count - 1,
-                  };
-                  props.setVal([object, temp]);
+                    let object = {
+                        count: props.val[0].count
+                    };
+                    if(props.val[0].count > 0){
+                        object = {
+                            count: props.val[0].count - 1,
+                        };
+                    }
+                    console.log(props.val[0]);
+                  props.setVal([object, temp, {flag:false}]);
                   console.log('props.val', props.val);
                   removeElement();
                 }}
@@ -316,7 +336,7 @@ const Item = (props) => {
                   let object = {
                     count: props.val[0].count - 1,
                   };
-                  props.setVal([object, temp]);
+                  props.setVal([object, temp, {flag:false}]);
                   removeElement2();
                 }}
               />

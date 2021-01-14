@@ -137,28 +137,6 @@ function ProductView({route, navigation}) {
           { cancelable: false }
       );
 
-  /*
-  const DrawerGroupsShowcase = () => {
-    const [selectedIndex, setSelectedIndex] = React.useState(null);
-
-    return (
-      <Drawer
-        selectedIndex={selectedIndex}
-        onSelect={(index) => setSelectedIndex(index)}>
-        <DrawerGroup title="Ürün Açıklaması" accessoryLeft={SmartphoneIcon}>
-          <DrawerItem onPress={() => {}} title="Test"/>
-        </DrawerGroup>
-        <DrawerGroup title="Ürün Özellikleri" accessoryLeft={BrowserIcon}>
-          <DrawerItem onPress={() => {}} title="Nebular"  />
-        </DrawerGroup>
-        <DrawerGroup title="Taksit Bilgileri" accessoryLeft={ColorPaletteIcon}>
-          <DrawerItem onPress={() => {}} title="Eva Design System"/>
-        </DrawerGroup>
-      </Drawer>
-    );
-  };
- */
-
   const renderComments = ({item}) => {
     return (
         <Item item={item}/>
@@ -190,7 +168,7 @@ function ProductView({route, navigation}) {
               {
                 comments.map((x) => {
                   return(
-                      <View style={{flex:1, flexDirection:'row', alignSelf:'center', justifyContent:'center', alignItems:'center',     borderColor:'grey',
+                      <View style={{flex:1, flexDirection:'row', alignSelf:'center', justifyContent:'center', alignItems:'center' ,borderColor:'grey',marginTop:6,
                         borderRadius: 6, borderWidth:0.8, marginBottom:6}}>
                         <View style={{width:80, height:80,alignItems:'center', justifyContent:'center'}}>
                           <View style={{borderWidth:0.7, borderRadius: 28, borderColor:'grey', height:50, width:50, alignItems:'center', justifyContent:'center'}}>
@@ -206,8 +184,8 @@ function ProductView({route, navigation}) {
                             </Text>
                           </View>
                         </View>
-                        <View style={{flex:1, marginLeft:6, justifyContent:'center', flexWrap:'nowrap'}}>
-                          <Text style={{width:270}}>
+                        <View style={{flex:1, marginRight:8, justifyContent:'center', flexWrap:'nowrap', backgroundColor:'#eaeaea', borderRadius:6, height:80}}>
+                          <Text style={{width:270, padding:6, color:'black', fontSize:13}}>
                             {x.comment}
                           </Text>
                         </View>
@@ -232,7 +210,6 @@ function ProductView({route, navigation}) {
               title={product.item.brand}
               alignment="center"
               accessoryLeft={() => renderBackAction(navigation)}
-              accessoryRight={renderRightActions}
             />
             <View style={styles.ProductSlider}>
               <ProductSwiper />
@@ -253,9 +230,15 @@ function ProductView({route, navigation}) {
                   accessoryLeft={CartIcon}
                   onPress={() => {
                     let temp = value[1];
-                    temp.push(product.item.id);
-                    setValue([{count:value[0].count + 1}, temp]);
-                    SuccessAlert();
+                    if(temp.includes(product.item.id))
+                    {
+                      setValue([{count:value[0].count}, temp, {flag:false}]);
+                      SuccessAlert();
+                    }else{
+                      temp.push(product.item.id);
+                      setValue([{count:value[0].count + 1}, temp, {flag:false}]);
+                      SuccessAlert();
+                    }
                   }}
                 >
                   Sepete Ekle
@@ -280,7 +263,6 @@ function ProductView({route, navigation}) {
               title={product.item.brand}
               alignment="center"
               accessoryLeft={() => renderBackAction(navigation)}
-              accessoryRight={renderRightActions}
             />
             <View style={styles.ProductSlider}>
               <ProductSwiper />
@@ -324,9 +306,15 @@ function ProductView({route, navigation}) {
                     accessoryLeft={CartIcon}
                     onPress={() => {
                       let temp = value[1];
-                      temp.push(product.item.id);
-                      setValue([{count:value[0].count + 1}, temp]);
-                      SuccessAlert();
+                      if(temp.includes(product.item.id))
+                      {
+                        setValue([{count:value[0].count}, temp, {flag:false}]);
+                        SuccessAlert();
+                      }else{
+                        temp.push(product.item.id);
+                        setValue([{count:value[0].count + 1}, temp, {flag:false}]);
+                        SuccessAlert();
+                      }
                     }}
                   >
                     Sepete Ekle
@@ -384,7 +372,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     //backgroundColor: '#b2bec3',
-
     borderTopWidth: 0.3,
     borderBottomWidth:0.3,
   },
@@ -407,9 +394,9 @@ const styles = StyleSheet.create({
     borderBottomWidth:0.3,
   },
   images: {
-    width: 200,
-    height: 240,
-    marginTop:20
+    width: 220,
+    height: 260,
+    marginTop:12
   },
   TabContainer: {
     alignSelf:'center',
