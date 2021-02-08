@@ -241,6 +241,106 @@ function MainPage({navigation}) {
             sliderBoxHeight={300}
             parentWidth={responsiveWidth(90)}
             style={styles.SliderBox}
+            onCurrentImagePressed={index => {
+                if(index === 1){
+                    navigation.navigate("ProductView", {item :{
+                            "id": 7,
+                            "name": "Philips SpeedPro Kablosuz Şarjlı Dikey Süpürge",
+                            "brand": "Philips",
+                            "price": 2399.0,
+                            "salePrice": 2199.0,
+                            "amount": 0,
+                            "itemRating": 5,
+                            "img_url": [
+                                "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_1.png",
+                                "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_2.png",
+                                "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/philips_speedpro_3.png"
+                            ],
+                            "keywords": ["philips", "süpürge", "dikeysüpürge", "dikey süpürge"],
+                            "productInfo": "Yeni SpeedPro kablosuz elektrikli süpürge, etkili erişim özelliğiyle temizlik işini hızlıca halletmenizi sağlar.\n\n180 derecelik emiş başlığı duvar, mobilya kenarları ve köşeler gibi en zorlu noktalardaki tozları bile hassas şekilde çeker.",
+                            "comments": [
+                                {
+                                    "rating": 5,
+                                    "comment": "Gerçekten çok kaliteli bir ürün. Kablosuz olması sayesinde kablo derdi olmadan rahatlıkla evin her yerini temizleyebilirsiniz."
+                                },
+                                {
+                                    "rating": 4,
+                                    "comment": "Kaliteli bir ürün süpürmesi başarılı fakat şarjı daha uzun olabilirdi."
+                                }
+                            ]
+                        }})
+                }
+                if(index === 0){
+                    navigation.navigate("ProductView", {item :{
+                            "id": 4,
+                            "name": "IPhone XR 64GB Kırmızı",
+                            "brand": "Apple",
+                            "price": 6999.0,
+                            "amount": 0,
+                            "salePrice": 6499.0,
+                            "itemRating": 5,
+                            "img_url": [
+                                "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red.png",
+                                "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red-2.jpg",
+                                "https://raw.githubusercontent.com/donmezyusuf/GraduationProject/main/src/img/iphone-xr-red-3.jpg"
+                            ],
+                            "keywords": [
+                                "Iphone",
+                                "İphone",
+                                "iphone",
+                                "IPHONE",
+                                "İPHONE",
+                                "IPhone",
+                                "IPHone",
+                                "IPHOne",
+                                "IPHONe",
+                                "İPhone",
+                                "İPHone",
+                                "İPHOne",
+                                "İPHONe",
+                                "Iphone XR",
+                                "İphone XR",
+                                "iphone XR",
+                                "IPHONE XR",
+                                "İPHONE XR",
+                                "IPhone XR",
+                                "IPHone XR",
+                                "IPHOne XR",
+                                "IPHONe XR",
+                                "İPhone XR",
+                                "İPHone XR",
+                                "İPHOne XR",
+                                "İPHONe XR",
+                                "IphoneXR",
+                                "İphoneXR",
+                                "iphoneXR",
+                                "IPHONEXR",
+                                "İPHONEXR",
+                                "IPhoneXR",
+                                "IPHoneXR",
+                                "IPHOneXR",
+                                "IPHONeXR",
+                                "İPhoneXR",
+                                "İPHoneXR",
+                                "İPHOneXR",
+                                "İPHONeXR",
+                                "i̇phone",
+                                "Elektronik"
+                            ],
+                            "productInfo": "Üstün akıllı. Olağanüstü alımlı. Sektördeki en gelişmiş LCD ekran yepyeni Liquid Retina.\n\nDaha da hızlı Face ID.\n\nBir akıllı telefondaki en akıllı, en güçlü çip.\n\nVe çığır açan bir kamera sistemi.\niPhone XR. Her açıdan göz kamaştırıcı.",
+                            "comments": [
+                                {
+                                    "rating": 5,
+                                    "comment": "Gerçekten çok kaliteli bir ürün."
+                                },
+                                {
+                                    "rating": 4,
+                                    "comment": "Fazla söze gerek yok, IPhone!."
+                                }
+                            ]
+                        }})
+                }
+            }}
           />
         </View>
         <Layout style={styles.SaleContainer}>

@@ -217,6 +217,16 @@ function ProductView({route, navigation}) {
             <View style={styles.ProductInfoContainer}>
               <View style={styles.NameInfoContainer}>
                 <Text category="s1">{product.item.name}</Text>
+                <View style={{width:84, height:1}}>
+                  <AirbnbRating
+                      count={5}
+                      reviewSize={0.1}
+                      defaultRating={product.item.itemRating}
+                      size={12}
+                      isDisabled={true}
+                      //selectedColor={'#9a4b8d'}
+                  />
+                </View>
               </View>
               <View style={styles.PriceButtonContainer}>
                 <View style={styles.priceContainer}>
@@ -270,6 +280,16 @@ function ProductView({route, navigation}) {
             <View style={styles.ProductInfoContainer}>
               <View style={styles.NameInfoContainer}>
                 <Text category="s1">{product.item.name}</Text>
+                <View style={{width:84, height:1}}>
+                  <AirbnbRating
+                      count={5}
+                      reviewSize={0.1}
+                      defaultRating={product.item.itemRating}
+                      size={12}
+                      isDisabled={true}
+                      //selectedColor={'#9a4b8d'}
+                  />
+                </View>
               </View>
               <View style={styles.PriceButtonContainer}>
                 <View style={styles.priceContainer}>
@@ -365,7 +385,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     width: responsiveWidth(90),
-    height: 60,
+    height: 80,
   },
   wrapper: {},
   slide1: {

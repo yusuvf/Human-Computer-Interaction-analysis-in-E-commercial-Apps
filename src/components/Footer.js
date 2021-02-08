@@ -67,13 +67,16 @@ export const Footer = (props) => {
                                 ],
                             { cancelable: false }
                         );
-                        props.navigation.navigate("Onay");
+
                         let array = props.val;
+                        console.log(array);
                         array[0] = {count:0}
                         array[2] = {flag:true}
                         console.log(array);
                         props.setVal(array)
                         console.log(props.setVal);
+                        props.navigation.goBack();
+
                     }
                 }}
             >
