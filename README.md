@@ -1,5 +1,7 @@
 # GraduationProject
 
+## Report [Link](https://github.com/donmezyusuf/GraduationProject/blob/main/Yusuf%20Do%CC%88nmez%20-%20Bitirme%20Projesi%20II%20.pdf)
+
 E-commercial application for my graduation project
 
 The purpose of the development of this project is to develop two E-commerce applications in order to measure the user experience of the users.
